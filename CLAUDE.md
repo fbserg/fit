@@ -6,6 +6,9 @@ Personal fitness project. First-principles reasoning only: mechanisms over bro-s
 - Male, mid-30s, 5'10" (178 cm), 154 lb, relatively fit, returning to consistent training after a gap.
 - No known kidney/metabolic issues (assumed — revisit if that changes).
 
+## Injuries
+- **Right wrist** (noted 2026-07-31): prior injury, rehabbed with physio. Asymptomatic at baseline but overloading produces light pain. Plays squash regularly (recurring wrist load on the same side). Rule: light pain that resolves same-day is acceptable; pain that alters technique or persists to next morning means drop the offending grip/load and reassess — never push through. Watch as pressing loads climb (keep wrist stacked over forearm); rope > bar on triceps work; wrist wraps for pressing are a legitimate tool, not a crutch. Any exercise selection or program change must check against this.
+
 ## Current state (baseline 2026-07-27, details in scans/scans.md)
 - ~154 lb, BIA-reported 11.6% BF (true value unknowable — no reliable BIA/DEXA correction exists; plausible range ~9–15%), SMI 8.1, segmental lean balanced.
 - Prior 14.7 months: +8.9 lb at ~+70 kcal/day average surplus, majority fat — surplus without progressive overload to direct it.
