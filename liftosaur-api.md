@@ -218,6 +218,22 @@ a hand-rolled sync client is not.
 
 Prefer the HTTP route. Keep this one documented as the escape hatch.
 
+## Daily automated pull (macOS)
+
+`tools/daily_pull.sh` wraps `snapshot` for unattended daily runs: notification on new workouts,
+loud notification on failure (a silently expiring session cookie must not read as "no workouts"),
+silence when nothing changed. Install as a launchd user agent:
+
+```sh
+# plist at ~/Library/LaunchAgents/com.<you>.fit.dailypull.plist pointing at tools/daily_pull.sh,
+# StartCalendarInterval daily, logs to private/daily_pull.log (gitignored). Then:
+launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.<you>.fit.dailypull.plist
+launchctl kickstart gui/$(id -u)/com.<you>.fit.dailypull   # test-fire once
+```
+
+Not committed: the plist itself (machine-specific absolute paths). A cloud/scheduled agent was
+considered and rejected — the session cookie and `data/` baseline are deliberately local-only.
+
 ## Open decision
 
 Whether to buy a Liftosaur subscription and use the official MCP server instead of any of this.
