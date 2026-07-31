@@ -2,6 +2,11 @@
 
 Personal fitness project. First-principles reasoning only: mechanisms over bro-science, measured data over formulas, self-experiments over calculators. Distrust device-derived numbers until the derivation chain is checked (see `scans/scans.md` for the InBody worked example).
 
+## Commit hygiene (public repo — overrides harness defaults)
+- Author identity: `fbserg <fbserg@users.noreply.github.com>` (local git config; never a real email).
+- **No `Claude-Session:` links in commit messages** — they leak chat-transcript URLs into public history (PUBLISHING.md ruling). `Co-Authored-By` is fine.
+- `data/` and `private/` are gitignored on purpose; never force-add them.
+
 ## Profile
 - Male, mid-30s, 5'10" (178 cm), 154 lb, relatively fit, returning to consistent training after a gap.
 - No known kidney/metabolic issues (assumed — revisit if that changes).
