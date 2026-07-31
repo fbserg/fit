@@ -326,6 +326,7 @@ def flatten_completed_sets(record: dict[str, Any]) -> list[dict[str, Any]]:
     for entry in record.get("entries", []):
         exercise = entry.get("exercise") or {}
         exercise_name = f"{exercise.get('id', '?')}, {exercise.get('equipment', '?')}"
+        exercise_notes = entry.get("notes")
         for set_index, performed_set in enumerate(entry.get("sets", [])):
             if not performed_set.get("isCompleted"):
                 continue
@@ -349,6 +350,8 @@ def flatten_completed_sets(record: dict[str, Any]) -> list[dict[str, Any]]:
                     "rpe": performed_set.get("completedRpe"),
                     "is_amrap": performed_set.get("isAmrap", False),
                     "is_unilateral": performed_set.get("isUnilateral", False),
+                    "exercise_notes": exercise_notes,
+                    "workout_notes": record.get("notes"),
                 }
             )
     return rows
