@@ -1,0 +1,14 @@
+# Liftosaur account session cookie. Grants full read/write access to the account —
+# never commit it. See liftosaur-api.md.
+.liftosaur-session
+
+.DS_Store
+__pycache__/
+
+# Training data pulled from Liftosaur. Gitignored: this repo is public, workout
+# logs and bodyweight are not. Derived, aggregated review notes go in reviews/ instead.
+data/
+
+# Personal instance data. Stays on this machine, never published.
+# See PUBLISHING.md.
+private/
