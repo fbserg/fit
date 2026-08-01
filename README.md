@@ -31,7 +31,7 @@ weakest first. That file is the honest one — read it before trusting anything 
 
 | If you want to… | Read |
 |---|---|
-| Steal the method and run it on yourself | **`PLAYBOOK.md`** — 16 rules, a traps table, a stall-diagnosis order of operations |
+| Steal the method and run it on yourself | **`PLAYBOOK.md`** — 17 rules, a traps table, a stall-diagnosis order of operations |
 | Find out what the method needs from you before you start | **`INTAKE.md`** — the questions whose answers rewrite whole sections |
 | Know how much to trust any given claim | **`CONFIDENCE.md`** — ranked weakest-first, with what would strengthen each |
 | See what was decided and why, without re-litigating it | **`DECISIONS.md`** — ruling / why / reopens-if |

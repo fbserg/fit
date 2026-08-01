@@ -132,6 +132,36 @@ the method catching its own errors, which is the whole point of running it adver
     press seed is explicitly C-tier and expected to be wrong inside the first set, which is a
     fine place for it to be as long as nobody plans around it.
 
+17. **A remembered number is a C-tier number, even when a real citation is attached to it.
+    Separate what you remember about *structure* from what you remember about *magnitude and
+    direction* — they do not fail at the same rate.**
+    `cardio.md` is this repo's cleanest natural experiment on the point, because it was written
+    first from recall and then checked line by line. Eight claims needed correcting; two were
+    outright backwards. The split was not random:
+
+    | Held up | Needed correcting |
+    |---|---|
+    | Mechanism claims (eccentric damage drives interference; brief loading is a weak tendon stimulus) | Every specific magnitude (3–3.5× BW, 6–8× BW, 90 m, "descent is ⅓ of ascent", 5–7 MET) |
+    | Structural claims (running interferes, cycling doesn't; sustained strain beats fast strain) | Two directions (which way stairs load the kneecap; whether traffic raises or lowers ride intensity) |
+    | Anything computed from first principles (mgh framing, impulse–momentum) | — |
+
+    The pattern: remembering *that A exceeds B* is far more reliable than remembering *by how
+    much*, and both are more reliable than a number recalled with no derivation behind it.
+    *Decision rule:* before any recalled number becomes load-bearing, either derive it or check
+    it. Prefer computing to recalling whenever the arithmetic is available — a five-line
+    calculation caught three of the eight errors before any literature search ran.
+
+    **The sharpest sub-case, worth its own name: never read a quantity off a correlated proxy.**
+    Both backwards claims were this same error. Patellofemoral joint force was inferred from
+    ground reaction force — but GRF is higher descending while joint force is higher ascending,
+    because the flexion angle at contact changes the quadriceps moment arm. Average ride
+    intensity was inferred from the presence of stops — but braking energy has to be regenerated
+    on the next acceleration, so stops raise the average rather than diluting it. In both cases
+    the proxy is genuinely correlated with the target *and points the wrong way here*. That is
+    exactly when the substitution is most tempting and most dangerous. Rule 1's measured-vs-derived
+    split catches this when the derivation is explicit; this is the version where the derivation
+    is silent and lives only in your head.
+
 ## Start here
 
 Minimum path to your own version, in order:

@@ -147,6 +147,23 @@ trend-only, every 8–12 weeks.
 derivation-chain audit and `abs.md` for why no device-derived body-fat percentage is trustworthy
 here in either direction.
 
+### Cycling is the default cardio slot, not swimming
+**Ruling.** If one cardio modality happens, it is cycling. `swimming.md`'s analysis stands on its
+own terms and is not withdrawn — swimming simply loses the head-to-head for *this* lifter.
+**Why.** Both are near-zero-interference for the lower body (Wilson 2012: running interferes,
+cycling doesn't; swimming sits with cycling as non-weight-bearing). They separate on the risk
+column, not the benefit column. Swimming's real cost is upper-body specific — pull-dominant
+fatigue competing with rows and pulldowns, and shoulder overuse sharing the exact tissue pathway
+as incline press, flat press/dip and lat pulldown (`swimming.md` §§1–2). Cycling is lower-body,
+so it touches neither, and it adds no wrist load beyond light handlebar grip, which matters given
+the rehabbed right wrist plus recurring squash load on the same side (`CLAUDE.md`, Injuries).
+Swimming also needs 8–12 weeks of technique work before it reaches a real training zone; cycling
+delivers 235–283 kcal and a genuine aerobic stimulus from the first session.
+**Reopens if.** A pool becomes dramatically more convenient than a bike route (adherence beats
+optimality — `exercises.md`, "What optimal means"), or a knee/road-safety issue makes city riding
+unattractive. Note the two are not exclusive; this ruling only settles which one gets the slot
+when only one will realistically happen.
+
 ---
 
 ## Open, not yet decided

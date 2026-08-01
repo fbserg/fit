@@ -35,10 +35,12 @@ Personal fitness project. First-principles reasoning only: mechanisms over bro-s
 - Actual logged history is in `history.md` (Hevy export, 64 workouts, 2024-07 -> 2026-02): the June 2025 block decayed 15 -> 1 sessions/month and the last logged session was 2026-02-03, ~6 months pre-baseline. Adherence, not programming, is the demonstrated failure mode. Starting-load reference table is there too — 6-9 months stale, no RPE anywhere, so they are sanity checks, not week-1 targets.
 - Judge progress by logbook progression over 8 weeks, not by InBody scans (noise exceeds signal at realistic gain rates).
 
-## Cardio / swimming
-- Full analysis in `swimming.md`. Verdict: no meaningful interference with hypertrophy (interference is driven by eccentric damage from running, not aerobic work per se; swimming is non-weight-bearing). Contributes zero hypertrophy — it's cardio/VO2max/longevity only.
-- Real risks are upper-body specific: pull-dominant fatigue overlapping rows/pulldowns (evidence gap, unproven), and shoulder overuse sharing the same tissue pathway as pressing/pulldowns.
-- If added: 2x/week 30-40 min, never within 6 h of lifting, never before a pulling-heavy session, +250-350 kcal on swim days. Canaries = anterior shoulder pain / lost internal rotation, or stalling reps on pulling lifts.
+## Cardio / non-lifting activity
+- **Framework in `cardio.md`** — price any non-lifting activity on four axes in order: energy (vs the weigh-in noise floor), adaptation (has the dose saturated?), interference (by modality), risk (what's the worst version?). Axis 1 usually returns "irrelevant" and retires the question.
+- **Cycling is the default cardio slot, not swimming** (`DECISIONS.md`). Both are near-zero lower-body interference; they separate on risk, and cycling touches neither the shoulder-impingement pathway nor the wrist. 2x/week 30-40 min. No calorie adjustment at 2x/wk (426-565 kcal/wk sits under the ±150 kcal/day step) — **add calories back at 3x/wk or more.**
+- **Stair descent is nutritionally invisible** (~24-33 kcal net) and physiologically near-empty. Never log it, never eat it back. If bounding down: land soft, not stiff — that's a ~3x peak-force reduction for free. The real risk is a fall onto the rehabbed right wrist, not accumulated wear.
+- Swimming: full analysis retained in `swimming.md`, not withdrawn. Contributes zero hypertrophy. Real risks are upper-body specific — pull-dominant fatigue overlapping rows/pulldowns (evidence gap, unproven), and shoulder overuse sharing the same tissue pathway as pressing/pulldowns. If it happens anyway: never within 6 h of lifting, never before a pulling-heavy session, +250-350 kcal on swim days. Canaries = anterior shoulder pain / lost internal rotation, or stalling reps on pulling lifts.
+- **Squash has no analysis and is known-regular.** Court sport with cutting, deceleration and repeated same-side wrist load. It does NOT inherit the cycling verdict (`INTAKE.md`).
 
 ## Abs / leanness
 - Full analysis in `abs.md`. There is NO validated body-fat threshold for visible abs — the "10%" figure is skinfold-era bodybuilding folklore, never method-anchored. Visibility = mm of subcutaneous fat over rectus abdominis x muscle relief x tendinous intersection count (genetically fixed; ~15% of people have 2 intersections = four-pack ceiling forever).
