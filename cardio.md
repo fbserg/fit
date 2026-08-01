@@ -19,9 +19,11 @@ pass and does not inherit these conclusions.
   own analysis, and with zero shoulder or wrist exposure.
 - **The bounding-down-stairs habit is the only thing here with a downside**, and the downside is
   a fall on concrete, not accumulated wear.
-- **I got three things wrong on the first pass** and they are logged below rather than edited
-  out, per `PLAYBOOK.md` rule 13. One of them — which direction stairs load the kneecap — was
-  backwards.
+- **Eight first-pass claims were wrong** and are logged in §7 rather than edited out, per
+  `PLAYBOOK.md` rule 13. Two were outright backwards: which direction stairs load the kneecap,
+  and whether traffic lights raise or lower the average cost of a city ride. Both energy costs
+  were underestimated, and the bone argument was withdrawn entirely. The surviving conclusions
+  are unchanged in direction, which is the only reason this document is still short.
 
 ## 1. The pricing framework — four axes, in this order
 
@@ -52,23 +54,34 @@ you do it habitually, **the weekly weight trend has already absorbed it.** Addin
 for a habitual activity double-counts it. This is the same trap `PLAYBOOK.md` rule 4 describes
 for formulas — the measured trend is ground truth, and it does not need help.
 
-| Activity | MET (Compendium code) | Net kcal | % of a 2400 day | Weekly | lb/wk equivalent |
-|---|---|---|---|---|---|
-| 30-flight stair descent, 5–7 min | 3.5 (17070, *walking, descending stairs*) | ~15–21 | 0.75% | 126 (if daily) | 0.036 |
-| 30 min city cycling | 4.3–6.8 (01015 *self-selected easy pace* → 01011 *to/from work, self-selected pace*) | ~110–215 | 4–9% | 360 (at 2×/wk) | 0.10 |
+**Use measured values, not desk-reference values, where both exist.** The Compendium is a
+lookup table of estimates; for both activities here, direct measurement lands meaningfully
+higher, and in the same direction. This is `PLAYBOOK.md` rule 16 applied to MET codes: grade the
+number by how directly it measured the thing you're about to do.
 
-Both MET values are gross and include resting metabolism; the net column subtracts 1 MET, which
-is the correction people routinely skip and which is worth ~37 kcal on the 30-minute ride alone.
-The cycling range is wide because stop-start urban riding doesn't map cleanly onto a single
-code — deliberately left wide, since the conclusion below holds across the whole range.
+| Activity | Desk MET (Compendium) | Measured MET | Net kcal (measured) | % of a 2400 day |
+|---|---|---|---|---|
+| 30-flight stair descent, 5–7 min | 3.5 (17070) | **4.9** (Teh & Aziz 2002, N=49) | **~24–33** | ~1.0–1.4% |
+| 30 min city cycling | 6.8 (01011) | **7.4–8.7** (in-traffic, portable gas analyzer) | **~235–283** | ~10–12% |
 
-**Stairs: never log it, never eat it back.** Two orders of magnitude below the weekly signal.
+MET values are gross and include resting metabolism; the net column subtracts 1 MET, the
+correction people routinely skip — worth ~37 kcal on the 30-minute ride alone.
 
-**Cycling: also inside the noise floor at 2×/week — do not add calories back.** Note this
-*differs* from `swimming.md`'s prescription to add 250–350 kcal on swim days, and the difference
-is real, not an inconsistency: 2–3 swims add 500–1200 kcal/week, whereas 2 rides add ~360. The
-swim rule does not transfer at this volume. It would start to apply if riding became near-daily
-or substantially longer.
+| Activity | Weekly net | lb/wk equivalent | Verdict |
+|---|---|---|---|
+| Stair descent, daily | ~170–234 | 0.05–0.07 | Below the noise floor. Never log it. |
+| Cycling, 2×/wk | ~426–565 | 0.12–0.16 | Below the ±150 kcal/day step, but closer to the line than it looks. |
+| Cycling, 5×/wk | ~1064–1413 | 0.30–0.40 | **Crosses the adjustment threshold.** Becomes a real calorie question. |
+
+**Stairs: never log it, never eat it back.** Even at the measured value it is ~1% of a day.
+
+**Cycling at 2×/week: still no calorie adjustment — but the margin is thinner than the first
+pass suggested.** `swimming.md` prescribes +250–350 kcal on swim days because 2–3 swims add
+500–1200 kcal/week. Two rides at the *measured* in-traffic intensity add **426–565 kcal/week**,
+which at the top of the range is *inside* that band. So the honest ruling is not "the swim rule
+doesn't transfer" — it's that cycling sits just below the trigger at 2×/week and enters it at
+3×/week or higher. Averaged daily, 2×/week is 61–81 kcal/day against a ±150 kcal adjustment
+step, so the weekly weigh-in still absorbs it. **Revisit the moment frequency goes past ~3/week.**
 
 ### The mgh framing trap
 
@@ -82,6 +95,31 @@ is inverted. mgh is an upper bound on mechanical work absorbed — a useful scal
 *loading* question, and not a calorie figure at all.
 
 Per `PLAYBOOK.md` rule 3: the sum was arithmetically correct and physically meaningless.
+
+**Confirmed by primary literature, and the confirmation is more interesting than the error.**
+Margaria 1968 measured mechanical efficiency for negative work at **≈ −1.2 (i.e. 120%)** —
+opposite in sign and magnitude to concentric work's ~25%. That is only possible because the load
+does work *on* the muscle rather than the muscle on the load (Abbott, Bigland & Ritchie 1952,
+the original human negative-work study, using a "push-me-pull-you" paired-ergometer design).
+Metabolic cost is a mechanistically distinct process — eccentric cross-bridge cycling — not mgh
+divided by an efficiency.
+
+**And the two available methods disagree by 2–3×, which is worth stating rather than papering
+over:**
+
+| Method | Predicted net cost, 64–85 m descent |
+|---|---|
+| Margaria negative-work efficiency (smooth downhill walking) | **~9–12 kcal** |
+| Teh & Aziz measured stair descent (4.9 METs, N=49) | **~24–33 kcal** |
+
+Stairs cost roughly 2–3× what smooth downhill coasting predicts, and the reason is structural:
+stair descent is *repeated per-step braking plus balance*, not continuous controlled falling.
+Neither number is wrong; they measure different things. Since the question is about stairs, the
+stair-specific measurement wins — but the gap is a real feature of the literature, not noise.
+
+**Folklore flag: "descent costs about a third of ascent" is not well supported.** Teh & Aziz
+measured descent at 4.9 METs against ascent at 9.6 — **51%**, not 33%. The ~1/3 figure traces
+to a separate, smaller 1997 study. Use 40–50%.
 
 ## 3. Axis 2 — adaptation
 
@@ -140,14 +178,24 @@ Thirty minutes of continuous-ish riding is a legitimate aerobic dose — mitocho
 stroke volume, the actual VO2max and longevity currency that `swimming.md` was chasing. It
 contributes **zero** hypertrophy, and should be priced as cardio only, exactly as swimming is.
 
-**Hedge, stated rather than buried:** "legitimate aerobic dose" is a general-literature claim,
-not a verified one for *this* dose in an already-fit rider. Stop-start urban riding spends real
-time coasting and stopped, and the intensity distribution — not the 30-minute duration — is what
-determines whether VO2max moves. The honest expectation is that it maintains and modestly
-improves aerobic fitness rather than driving it, and that a rider who wants a genuine VO2max
-stimulus needs sustained intensity that city traffic structurally interrupts. It remains the
-best-value cardio available here regardless, because the interference and injury columns are
-what actually separate it from the alternatives.
+**The intensity is higher than expected, and the "zone 2" label is wrong.** Directly measured
+cycle commuters in real traffic (portable gas analyzer, mean 2.2–2.3 stops per commute) rode at
+**65% VO2max and 78% HRmax** — which the authors put in the *bottom of the vigorous* category,
+not the moderate one. That's upper-zone-2 to lower-zone-3 territory. Caveat honestly: that
+sample's VO2max ran 31–39% above age-matched norms, so motivated riders may be inflating it.
+
+**But a single 30-minute ride is not a "dose," and that framing was overstated.** The one
+commuter-cycling RCT with a measured VO2max outcome (n=26, 10 weeks) used **148 ± 38 min/week,
+averaging ~65 min per session** — roughly 4–5 rides a week — to produce **+10.5% VO2max**. Two
+things follow. First, chronic adaptation required ten weeks of repeated long sessions; one ride
+produces no measurable change by itself. Second, +10.5% is a novice-magnitude response, and
+VO2max trainability falls sharply with training status — an already-fit, squash-playing subject
+should expect materially less from the same stimulus.
+
+Honest reframe: **a real but small aerobic stimulus per session, needing ~4–5×/week for ~8–10
+weeks to move a measurable number, with a smaller expected effect here than the trial showed.**
+It remains the best-value cardio available regardless, because interference and injury exposure
+are what actually separate it from the alternatives — not its VO2max yield.
 
 ## 4. Axis 3 — interference
 
@@ -233,7 +281,11 @@ This is the only consideration in the document that changes a recommendation.
 **Cycling**
 1. **2×/week, 30–40 min is a good buy.** Real aerobic adaptation, lowest interference of any
    modality, no shoulder or wrist exposure.
-2. **No calorie adjustment at this volume** — unlike swimming. Revisit if it goes near-daily.
+2. **No calorie adjustment at 2×/week**, but this is a near thing rather than a comfortable
+   one — two rides at measured intensity are 426–565 kcal/week, brushing the bottom of the band
+   that triggers `swimming.md`'s +250–350 kcal rule. **At 3×/week or more, add the calories
+   back.** At 5×/week it crosses the ±150 kcal/day adjustment step outright and becomes a
+   genuine accounting question.
 3. **Prefer it to swimming** if only one is going to happen. It buys the same cardiovascular
    currency without the shoulder-overuse pathway that `swimming.md` flags as the real swim risk,
    and without competing with rows and pulldowns.
@@ -275,6 +327,31 @@ Measured central estimate is ~3.5–5 × BW for this drop height; 6–8 × BW re
 stiff locked-knee landing. My "4 × BW average" was also mislabeled — it is a peak-adjacent
 instantaneous value, not a time-average over the landing phase (which is 2–3 × BW).
 
+### "Traffic lights drag the average intensity down" — BACKWARDS. 2026-08-01
+**Believed:** that stop-start urban riding averages *below* steady-state riding, because lights
+and coasting pull the mean down — the basis for an initial 5–7 MET estimate.
+**Actual:** measured in-traffic commuting runs **7.4–8.7 METs**, *above* the Compendium's 6.8
+desk value for self-paced commuting. **Mechanism:** kinetic energy dissipated into the brakes at
+each stop has to be regenerated entirely on the next acceleration. Stops don't average the cost
+down, they add discrete expensive events — the same principle as the measured cost of walking
+speed changes. Two to three stops per commute is enough to push the average up, not down.
+**Consequence:** the 30-minute ride is worth ~235–283 kcal net, not the ~170–180 first claimed.
+
+### Both activities' energy costs were underestimated. 2026-08-01
+Stairs used the Compendium's 3.5 MET desk value; direct measurement (Teh & Aziz 2002, N=49) puts
+descent at **4.9 METs**, so net cost is ~24–33 kcal rather than ~15–21. Conclusion unaffected —
+it is ~1% of a day either way — but the doc briefly used a desk estimate where a measurement
+existed, which is the exact failure `PLAYBOOK.md` rule 16 exists to prevent. Cycling was
+corrected in the same direction and by more; see the entry above.
+
+### "The swim calorie rule doesn't transfer to cycling" — too confident. 2026-08-01
+**Believed:** that 2 rides add ~360 kcal/week against swimming's 500–1200, so the +250–350 kcal
+swim-day rule plainly doesn't apply.
+**Actual:** at measured intensity, 2 rides add **426–565 kcal/week** — the top of that range sits
+*inside* the swim band. The ruling survives at 2×/week only because the daily average
+(61–81 kcal) stays under the ±150 kcal adjustment step. It fails at 3×/week. The original
+statement was right by accident and for the wrong reason.
+
 ### "The repeated bout effect has removed any stimulus" — overstated. 2026-08-01
 RBE is graded attenuation, not binary, and it decays (~3 weeks from a low-intensity bout).
 Corrected to "attenuated well below a hypertrophy-driving stimulus." See §4.
@@ -289,5 +366,12 @@ Corrected to "attenuated well below a hypertrophy-driving stimulus." See §4.
   known-imperfect transfer flagged rather than hidden.
 - **Any wrist symptom after a stumble**, which would move the fall risk in §5 from theoretical
   to logged, and probably ends the bounding habit.
-- **Riding frequency going near-daily**, which moves cycling above the noise floor in §2 and
-  makes it a calorie-accounting question for the first time.
+- **Riding frequency going to 3×/week or more**, which is where the calorie ruling in §2
+  inverts — not "near-daily" as first written. At 5×/week it crosses the ±150 kcal/day
+  adjustment step outright.
+- **A second in-traffic cycling measurement** in a sample that isn't self-selected for fitness.
+  The 7.4–8.7 MET figure driving §2's numbers rests on one study whose riders had VO2max 31–39%
+  above age norms. It disconfirmed the initial assumption rather than confirming it, which is
+  the good direction for a single study to point, but it is still a single study.
+- **Direct calorimetry on bounding down stairs**, which does not exist. The energy figures in §2
+  are for normal descent; the bounding case is an extrapolation, flagged as such.
