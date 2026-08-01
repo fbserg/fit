@@ -99,6 +99,16 @@ when you have a scan; the second runs off bodyweight alone.
 Large and highly variable between people. **TEF** — Thermic Effect of Food, the energy spent
 digesting. Both are routinely undercounted in handwritten TDEE math.
 
+**MET** — Metabolic Equivalent of Task, a multiple of resting metabolic rate (1 MET ≈ 3.5 ml
+O₂/kg/min). Used to price non-lifting activity in `cardio.md`. **⚠** Published MET values are
+*gross* — they include the resting energy you'd have spent anyway. Subtract 1 MET before
+comparing an activity to your calorie target, or you will credit yourself for being alive.
+
+**GRF / BW** — Ground Reaction Force, the force the ground pushes back with, conventionally
+expressed in multiples of BodyWeight. Walking is ~1.2 BW; landing from a jump can be several
+times that, and the multiplier is set mostly by how fast you stop, not how far you fell
+(`cardio.md`).
+
 **MPS** — Muscle Protein Synthesis, the building process protein intake feeds. **⚠** Per-meal MPS
 saturates around 0.4–0.5 g/kg, which is where the "30 g absorption cap" myth comes from — the
 excess is used more slowly, not wasted.

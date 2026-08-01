@@ -37,6 +37,7 @@ weakest first. That file is the honest one — read it before trusting anything 
 | See what was decided and why, without re-litigating it | **`DECISIONS.md`** — ruling / why / reopens-if |
 | Read the actual program | `program.md`, `exercises.md`, and `program.liftoscript` (the runnable form) |
 | Understand the body-composition reasoning | `scans/scans.md`, then `abs.md` |
+| Price cardio, a sport, or incidental daily activity against the program | `cardio.md` — a four-axis framework, then `swimming.md` for the worked swim case |
 | Set up the same tooling | `liftosaur-api.md` |
 | Not know what RIR, BIA, SMI or double progression mean | **`GLOSSARY.md`** — written for non-lifters, and it flags where this repo disagrees with common usage |
 
