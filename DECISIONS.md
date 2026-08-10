@@ -17,9 +17,9 @@ would otherwise assume were arbitrary.
 declined. Liftosaur's entire program is one text file, which lets this repo be the source of
 truth and reduces the app to a runner. Authoring, the web editor, link import, and JSON/CSV
 export are all free and work without an account.
-**Reopens if.** Liftoscript stops being able to express something the program needs. The known
-gap today is myo-reps: mini-set structure isn't representable as set groups, so it lives in a
-comment for the lifter to follow manually.
+**Reopens if.** Liftoscript stops being able to express something the program needs. The
+formerly-known gap — myo-reps — closed 2026-08-10: per-set-group rest timers make the mini-set
+structure fully expressible (see the corrected rest-timer ruling below).
 
 ### The free cookie path, not the official MCP server or REST API
 **Ruling.** Write to the account with three `session`-cookie-authenticated endpoints
@@ -111,12 +111,20 @@ control change did move it. Rest timers moved it 330 → 253 min/week. An earlie
 (`warmup×90s + working×180s`) reproduced 80–90% of the app's figures and was retracted once tested
 directly — it was curve-fitting, not mechanism. **We still do not know Liftosaur's duration
 formula**, and the app's estimate is not a measurement of this program. Time a real session.
-**Calf raise exception.** Its myo-rep protocol needs 15–20 s between mini-sets, which isn't
-expressible as set groups. A uniform 75 s would fight the intended structure, so nothing was
-encoded rather than encoding something wrong.
-**Reopens if.** A timed real session lands far from 253 min/week either way. Sessions are still
-well over the 32–38 min target — Day 1 by ~30 min — and pushing rest lower trades against load
-protection. Undecided.
+**Calf raise exception — OVERTURNED 2026-08-10.** The original ruling ("myo-reps aren't
+expressible as set groups; encode nothing rather than something wrong") failed its first contact
+with a real session: the first logged Day 2 showed the app presenting 5 plain sets with the 180 s
+global default while every other exercise ran explicit 75/120 s timers, and the lifter — 
+reasonably — did 5 heavy straight sets pyramiding 140→200 lb ×8, neither myo-reps nor the 12–15
+range. "Encode nothing" turned out to be the *most* wrong encoding available. The factual premise
+was also false: timers are per set group, and Liftosaur's own docs cite myo-reps as the intended
+use ("this is how you could do myo-reps"). Now encoded as
+`1x12-15 @7+ 20s, 4x3-5 @10+ 20s` (3 mini-sets on Day 4) with a `custom()` progression that adds
+10 lb when the activation set hits 15 — `dp()` would have gated on the 3–5-rep mini-sets and
+never fired.
+**Reopens if.** The app renders the custom() progression as a syntax error, or a timed real
+session lands far from 253 min/week either way. Sessions are still well over the 32–38 min
+target — Day 1 by ~30 min — and pushing rest lower trades against load protection. Undecided.
 
 ### Dumbbell weights are per dumbbell, and Hevy's are not
 **Ruling.** `program.liftoscript` states the weight of **one** dumbbell. Hevy's export states the

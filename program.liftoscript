@@ -1,7 +1,7 @@
 # Week 1
 ## Day 1
-Incline Bench Press, Dumbbell / 5x6-10 35lb @9+ 120s / progress: dp(2.5lb, 6, 10) / superset: A
-Incline Row, Dumbbell / 4x8-12 25lb @9+ 120s / progress: dp(2.5lb, 8, 12) / warmup: none / superset: A
+Incline Bench Press, Dumbbell / 5x6-10 37.5lb @9+ 120s / progress: dp(2.5lb, 6, 10) / superset: A
+Incline Row, Dumbbell / 4x8-12 27.5lb @9+ 120s / progress: dp(2.5lb, 8, 12) / warmup: none / superset: A
 // Use the overhead cable attachment, not a pushdown. Sets 1-2 at RIR 1. Set 3 is a drop-set: drop the weight ~20-30% immediately and continue to true failure (RIR 0).
 Triceps Extension, Cable / 2x8-12 22.5lb @9+ 75s, 1x8-12 22.5lb @10+ 75s / progress: dp(5lb, 8, 12) / warmup: none
 // Sets 1-2 at RIR 1. Set 3 is a finisher set to true failure (RIR 0).
@@ -10,14 +10,14 @@ Reverse Fly, Leverage Machine / 2x12-20 55lb @9+ 75s, 1x12-20 55lb @10+ 75s / pr
 Lateral Raise, Dumbbell / 3x12-20 12.5lb @9+ 75s, 1x12-20 12.5lb @10+ 75s / progress: dp(2.5lb, 12, 20) / warmup: none / superset: B
 
 ## Day 2
-Bench Press, Dumbbell / 4x6-10 40lb @9+ 120s / progress: dp(2.5lb, 6, 10) / superset: C
-Lat Pulldown, Cable / 5x6-10 100lb @9+ 120s / progress: dp(5lb, 6, 10) / warmup: none / superset: C
+Bench Press, Dumbbell / 4x6-10 42.5lb @9+ 120s / progress: dp(2.5lb, 6, 10) / superset: C
+Lat Pulldown, Cable / 5x6-10 110lb @9+ 120s / progress: dp(5lb, 6, 10) / warmup: none / superset: C
 // Standing, not seated/preacher. Sets 1-2 at RIR 1. Set 3 is a finisher set to true failure (RIR 0).
 Bicep Curl, Dumbbell / 2x8-12 20lb @9+ 75s, 1x8-12 20lb @10+ 75s / progress: dp(2.5lb, 8, 12) / warmup: none / superset: D
 // Sets 1-3 at RIR 1. Set 4 is a finisher set to true failure (RIR 0).
 Lateral Raise, Dumbbell / 3x12-20 12.5lb @9+ 75s, 1x12-20 12.5lb @10+ 75s / warmup: none / superset: D
-// Myo-reps: set 1 is the activation set, ~12-15 reps at RIR 3-4. Rest 15-20s, then 4 mini-sets of 3-5 reps to near-failure, 15-20s rest between mini-sets.
-Standing Calf Raise, Leverage Machine / 5x12-15 150lb @7+ / progress: dp(10lb, 12, 15) / warmup: none
+// Myo-reps: set 1 is the activation set at RIR 3-4; mini-sets of 3-5 reps to near-failure. The 20s timers are the protocol, not a bug. +10lb when the activation set hits 15.
+Standing Calf Raise, Leverage Machine / 1x12-15 140lb @7+ 20s, 4x3-5 140lb @10+ 20s / progress: custom() {~ if (completedReps[1] >= 15) { weights += 10lb } ~} / warmup: none
 
 ## Day 3
 Romanian Deadlift, Barbell / 5x6-10 95lb @8+ 120s / progress: dp(10lb, 6, 10)
@@ -32,5 +32,5 @@ Leg Press, Leverage Machine / 5x6-10 180lb @8+ 120s / progress: dp(10lb, 6, 10)
 Seated Leg Curl, Leverage Machine / 4x8-12 85lb @10+ 120s / progress: dp(10lb, 8, 12) / warmup: none
 // Set 1 at RIR 1. Set 2 is a finisher set to true failure (RIR 0).
 Reverse Fly, Leverage Machine / 1x12-20 55lb @9+ 75s, 1x12-20 55lb @10+ 75s / warmup: none
-// Myo-reps: set 1 is the activation set, ~12-15 reps at RIR 3-4. Rest 15-20s, then 3 mini-sets of 3-5 reps to near-failure, 15-20s rest between mini-sets.
-Standing Calf Raise, Leverage Machine / 4x12-15 150lb @7+ / warmup: none
+// Myo-reps: set 1 is the activation set at RIR 3-4; mini-sets of 3-5 reps to near-failure. The 20s timers are the protocol, not a bug.
+Standing Calf Raise, Leverage Machine / 1x12-15 140lb @7+ 20s, 3x3-5 140lb @10+ 20s / warmup: none

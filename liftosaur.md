@@ -42,11 +42,11 @@ Day 1 = 19, Day 2 = 21, Day 3 = 13, Day 4 = 15. **Total 68**, matching `program.
 
 ## Known simplifications — read before trusting the app over the doc
 
-Three prescriptions in `program.md` have no native Liftoscript mechanic. Each is encoded so the *set count* and therefore weekly volume is correct, with the real protocol in a `//` comment that the app surfaces as the exercise description during the workout.
+Two prescriptions in `program.md` have no native Liftoscript mechanic. Each is encoded so the *set count* and therefore weekly volume is correct, with the real protocol in a `//` comment that the app surfaces as the exercise description during the workout.
 
 | Prescription | Encoded as | What you must do manually |
 |---|---|---|
-| Myo-reps (calf raise, both days) | plain 5 / 4 sets | Set 1 is the activation set at RIR 3–4; the rest are 3–5-rep mini-sets off 15–20 s rest |
+| Myo-reps (calf raise, both days) | **native since 2026-08-10**: `1x12-15 @7+ 20s, 4x3-5 @10+ 20s` + `custom()` weight bump off the activation set | Nothing — the 20 s timers ARE the protocol. (Was a comment-only "plain 5 sets" encoding; first real session proved that misleads — see DECISIONS.md, overturned ruling) |
 | Drop-sets (triceps extension, both days) | final set at `@10` | Drop the load ~20–30% and continue to failure |
 | Overhead cable triceps extension | `Triceps Extension, Cable` + in-workout comment | Comment now says it; bracket-label syntax was tested and **would have severed shared progression** |
 
@@ -125,10 +125,12 @@ warmup configuration — the opposite of what we first assumed.
 Still well above target: Day 1 is 30 min over the 38-min ceiling even after the cut. Pushing rest
 lower trades against load protection and has not been decided.
 
-**Standing Calf Raise was deliberately left at the global default.** Its myo-rep protocol
-(15–20 s between mini-sets) isn't expressible as separate Liftoscript set groups — it's one flat
-`5x12-15` clause with the real structure only in the comment. A uniform 75 s there would fight the
-intended 15–20 s rests, so nothing was encoded rather than encoding something wrong.
+**Standing Calf Raise was deliberately left at the global default — corrected 2026-08-10.**
+The premise ("myo-reps aren't expressible as set groups") was false: timers attach per set group,
+and the official docs name myo-reps as the use case. The first real Day 2 session proved the cost
+of the gap — the app showed 5 plain sets at 180 s and the session was trained as heavy straight
+sets. Now encoded natively: `1x12-15 @7+ 20s, 4x3-5 @10+ 20s` (Day 4: 3 mini-sets), `custom()`
+progression adding 10 lb when the activation set hits 15. See DECISIONS.md, overturned ruling.
 
 **Do not treat the app's estimate as a measurement of this program.** Time an actual session instead — that is the only number that settles whether 32–38 min was realistic.
 
