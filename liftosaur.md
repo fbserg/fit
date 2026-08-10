@@ -45,7 +45,9 @@ workout is saved once, on that workout's record (`history[].entries[].notes`; `s
 stays empty), and the app redisplays the most recent note for that exercise in every later session —
 so to the lifter it looks attached to the exercise. Verified 2026-08-11 against live data. Practical
 rule: never bulk-delete notes (they're review input); to retire a stale one, write a newer note on
-the same exercise — newest wins the display.
+the same exercise — newest wins the display. **The reviewer never writes to history** — program
+writes are the verified-safe path, history edits go through the sync merge that can silently drop
+data. Notes that deserve permanence get absorbed into the exercise's `//` program comment instead.
 
 ## Known simplifications — read before trusting the app over the doc
 
