@@ -40,6 +40,13 @@ Day 1 = 19, Day 2 = 21, Day 3 = 13, Day 4 = 15. **Total 68**, matching `program.
 
 **Supersets are native.** `superset: A` groups exercises into a rotation. Day 1 uses A/B, Day 2 uses C/D; Days 3 and 4 have none, by design.
 
+**Exercise notes are stored per history entry but displayed per exercise.** A note written during a
+workout is saved once, on that workout's record (`history[].entries[].notes`; `settings.exerciseData`
+stays empty), and the app redisplays the most recent note for that exercise in every later session —
+so to the lifter it looks attached to the exercise. Verified 2026-08-11 against live data. Practical
+rule: never bulk-delete notes (they're review input); to retire a stale one, write a newer note on
+the same exercise — newest wins the display.
+
 ## Known simplifications — read before trusting the app over the doc
 
 Two prescriptions in `program.md` have no native Liftoscript mechanic. Each is encoded so the *set count* and therefore weekly volume is correct, with the real protocol in a `//` comment that the app surfaces as the exercise description during the workout.
