@@ -50,4 +50,7 @@ Personal fitness project. First-principles reasoning only: mechanisms over bro-s
 - Cutting now is the wrong sequence: deficits blunt lean gain (ES -0.57; ~-0.031 per 100 kcal/day), Forbes curve means leaner = more muscle lost per lb of fat, and no novice/detrained recomp bonus is available here. Build first, time-boxed cut later. If cutting: 130-190 g protein (Helms 2014).
 
 ## Open threads
-- Start ramp week 1; build a set/rep log.
+- ~~Start ramp week 1; build a set/rep log~~ → running: Liftosaur history is the set/rep log (nightly pull), Days 1-2 done (2026-07-31, 2026-08-10). Day 3 next = first RDL, ramp rules apply (95 lb, RIR 4).
+- **Fixed 4x/week slots: user owes four named day/time slots.** Check-in 2026-08-10: first-10-days frequency was 2 sessions, cause identified as schedule chaos (not motivation/soreness); user committed to 4x/week as designed. Fix is calendar, not program — do not redesign volume until slots are named and tried.
+- **Daily weigh-in: undecided (user said tbd, 2026-08-10).** Nutrition loop (2500/2300, ±150 steps) has ZERO weight data since the 2026-07-27 baseline and cannot calibrate until this lands. Preferred path: Liftosaur Measures screen (nightly pull already ingests it). Fallback if daily won't happen: 3x/week, same mornings.
+- Wrist check 2026-08-10: no signal at 42.5 lb DB pressing + regular squash. Green; keep the canary rules.
