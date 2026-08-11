@@ -49,6 +49,11 @@ Personal fitness project. First-principles reasoning only: mechanisms over bro-s
 - Track abdominal skinfold in mm at a fixed site + fixed-condition monthly photos. NOT %BF from any device.
 - Cutting now is the wrong sequence: deficits blunt lean gain (ES -0.57; ~-0.031 per 100 kcal/day), Forbes curve means leaner = more muscle lost per lb of fat, and no novice/detrained recomp bonus is available here. Build first, time-boxed cut later. If cutting: 130-190 g protein (Helms 2014).
 
+## Posture
+- Full analysis in `posture.md` (2026-08-10, 5-lane sweep). For a structurally normal mid-30s male, slouch is a **motor default, not a tissue problem**: curvature ~61% heritable, ~99% of kyphosis angle is vertebral bone shape, slouchers straighten instantly on cue (slouch even shows HIGHER neck EMG). Posture→pain is not established (prospective evidence weaker than cross-sectional); fixing it is cosmetic.
+- Evidence-base trap: every kyphosis-exercise trial enrolled hyperkyphotic (>40° Cobb) mostly-elderly subjects; the best trial (SHEAF, radiographic) was NULL even there. No RCT in normal-range adults exists. FHP trials in young adults move the angle 3-8° but measurement MDC is ~5° — near-invisible to the eye.
+- What works: cue-driven habit reset (~66 days to automaticity) + heavy pulling already in the program + 2 sets face pulls. Postural education ALONE = ~70% of the full corrective package's effect (3.1° of 4.4°, 4-arm RCT). Stretching is null for posture (tolerance, not tissue length) — doorway stretch/foam roller are "feels nice" only. Braces, taping, chiro, ergonomic gear: graveyard.
+
 ## Open threads
 - ~~Start ramp week 1; build a set/rep log~~ → running: Liftosaur history is the set/rep log (nightly pull), Days 1-2 done (2026-07-31, 2026-08-10). Day 3 next = first RDL, ramp rules apply (95 lb, RIR 4).
 - **Fixed 4x/week slots: user owes four named day/time slots.** Check-in 2026-08-10: first-10-days frequency was 2 sessions, cause identified as schedule chaos (not motivation/soreness); user committed to 4x/week as designed. Fix is calendar, not program — do not redesign volume until slots are named and tried.
