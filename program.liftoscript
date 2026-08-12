@@ -22,8 +22,9 @@ Lateral Raise / 3x12-20 @9+, 1x12-20 @10+ / 12.5lb 75s / superset: D
 Standing Calf Raise, Leverage Machine / 1x12-15 @7+, 4x3-5 @10+ / 140lb 20s / warmup: none / progress: custom() {~ if (completedReps[1] >= 15) { weights += 10lb } ~}
 ## Day 3
 // HINGE, not squat: push hips straight BACK, knees soft and fixed, bar slides down the thighs. Bottom = strong hamstring stretch, always BEFORE the lower back rounds - no need to reach the floor. Stand up by driving hips forward.
-// USE STRAPS. Session 1 (2026-08-11) ended on grip, not hamstrings: forearms gave out at 90lb and the last set dropped to 4 reps because the bar slipped, while back and legs were only "regular tired". Grip is not a goal of this program and straps keep load off the right wrist.
-// Ramp lift, session 2 of 3: @7 (RIR 3), then @8 from session 3 on. Straps mean this is the first time the RPE is HAMSTRING RPE rather than grip RPE, so the same bar weight will feel heavier. That is the ramp working, not a reason to add plates.
+// STRAPS if you have them. Session 1 (2026-08-11) ended on grip, not hamstrings: forearms gave out at 90lb and the last set dropped to 4 reps because the bar slipped, while back and legs were only "regular tired". Grip is not a goal of this program and straps keep load off the right wrist.
+// No straps? In order: chalk (fixes bar slip, not forearm fatigue) / stop at 4 sets rather than grinding a grip-limited fifth / trap bar if the gym has one. Rate the RPE off your HAMSTRINGS either way - if the set ended because your hands opened, that is not an @7, log it and note the cause.
+// Ramp lift, session 2 of 3: @7 (RIR 3), then @8 from session 3 on. With straps this is the first time the RPE is hamstring RPE rather than grip RPE, so the same bar weight will feel heavier. That is the ramp working, not a reason to add plates.
 Romanian Deadlift, Barbell / 4x7-10, 1x5-10 / 90lb @7+ 120s / warmup: 1x5 45lb, 1x5 70lb / progress: dp(10lb, 6, 10)
 // 20lb per hand is the right load - sets 2-4 were 8 reps at RIR 1. Two 20lb dumbbells IS the prescription; the 40lb first set on 2026-08-11 was a misread, not a PR.
 Bulgarian Split Squat / 4x9-12 / 20lb @9+ 120s / warmup: none / progress: dp(5lb, 8, 12)

@@ -125,7 +125,12 @@ The ramp is now encoded in the number — `@7` for session 2, `@8` from session 
 only explains it. Any future ramp must move the token, not the prose.
 
 ### Straps on the Romanian deadlift, from session 2 on
-**Ruling.** Straps for every RDL working set. Not for anything else.
+**Ruling.** Straps for every RDL working set. Not for anything else. **Amended same day — the
+lifter does not own straps, so the ruling ships with a fallback ladder:** chalk (fixes bar slip,
+which was the acute failure, but not forearm fatigue) → stop at 4 sets rather than grind a
+grip-limited fifth → trap bar if available → 45° back extension holding a plate, which is the only
+option that removes grip entirely. Buying straps is still the answer; the ladder exists so the
+program never instructs equipment the lifter doesn't have.
 **Why.** Session 1 (2026-08-11) ended on grip: forearm pump, the fifth set fell to 4 reps because
 the bar slipped, and the lifter's own note put back and legs at "regular tired" — 90 lb on a lift
 whose Hevy history shows 115 × 8. Grip endurance is the binding constraint and it is not a target
