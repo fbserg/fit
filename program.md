@@ -47,10 +47,10 @@ Sub-letters (1a/1b) are supersets — alternate back and forth, busy-gym rule be
 | 1-1a | Incline DB press | 5 × 6–10 | 1–2 |
 | 1-1b | Chest-supported row | 4 × 8–12 | 1–2 |
 | 1-2 | Overhead cable triceps ext | 3 × 8–12 | 1 (sets 1–2), 0 drop-set (set 3) |
-| 1-3a | Reverse pec deck | 3 × 12–20 | 1 (sets 1–2), 0 finisher (set 3) |
+| 1-3a | Chest-supported DB reverse fly | 3 × 12–20 | 1 (sets 1–2), 0 finisher (set 3) |
 | 1-3b | DB or cable lateral raise (free choice) | 4 × 12–20 | 1 (sets 1–3), 0 finisher (set 4) |
 
-1-1a/1-1b superset (DB rack + row machine — usually adjacent). 1-3a/1-3b superset (pec deck + DB rack).
+1-1a/1-1b superset (DB rack + row machine — usually adjacent). 1-3a/1-3b superset — **both now live at the DB rack**, one station, after the reverse pec deck proved contended (see below).
 
 **Day 2 — press/pull II: chest, back, biceps, side delts, calves**
 | Slot | Exercise | Sets × reps | RIR |
@@ -81,12 +81,14 @@ No supersets — RDL and BSS aren't antagonists, and this is the same RDL+BSS pa
 |---|---|---|---|
 | 4-1 | Hack squat or leg press | 5 × 6–10 | 2 |
 | 4-2 | Seated leg curl | 4 × 8–12 | 0–1 |
-| 4-3 | Reverse pec deck | 2 × 12–20 | 1 (set 1), 0 finisher (set 2) |
+| 4-3 | Chest-supported DB reverse fly | 2 × 12–20 | 1 (set 1), 0 finisher (set 2) |
 | 4-4 | Standing calf raise, myo-reps | 1 activation set + 3 myo-rep mini-sets (4 total) | 3–4 activation, 0 mini-sets |
 
-No supersets needed — all-machine, low station contention. Straight sets at 90–110 s (compounds) / 60–90 s (isolation).
+No supersets needed — machine-dominant, low station contention (4-3 is the one DB lift; it moved off the pec deck with its Day 1 twin to keep a single progression line). Straight sets at 90–110 s (compounds) / 60–90 s (isolation).
 
 **Estimated length**, same setup+work+rest arithmetic and busy-gym assumptions as before: Day 1 ~32 min, Day 2 ~33 min, Day 3 ~37 min (no superset compression available, most likely to run long), Day 4 ~34 min. A crowded gym forcing straight sets throughout Days 1–2 could add ~10–15 min, same caveat the old program already carried.
+
+**Measured length, four sessions in: 42.5 / 48.1 / 43.8 / 43.5 min.** Every session overran its estimate, by 6–15 min, and the one that overran most (Day 2, 48 min) is a superset day — so the busy-gym straight-sets caveat is not a caveat, it is the normal case. **Plan on ~45 min, not ~35.** The consequence that matters: the 45-min time ceiling (below) is now a rule that fires most sessions rather than an exception, so which slot it deletes is a real programming decision, not a hypothetical.
 
 **Weekly sets/muscle**, recomputed for the new structure (was: quads/hams/chest/back/calves ~9 each, side delts ~7.5, rear delts/biceps/triceps ~4.5 each — 66 sets/wk total):
 - Quads: 4-1 (5) + 3-2 BSS (4) = **9**
@@ -134,12 +136,12 @@ Busy gym means occupied stations, not new exercises. One pre-approved swap per l
 | Lat pulldown / pull-up | The other one |
 | Flat DB press / dip | The other one; else flat machine press |
 | Bulgarian split squat | Walking lunge or hack squat |
-| Reverse pec deck | DB bent-over rear delt fly or cable rear delt |
+| Chest-supported DB reverse fly | Reverse pec deck (if free) or cable rear delt |
 | Standing calf raise | Seated calf raise (accept it's soleus-biased) |
 
 ### Busy-gym superset rule
 
-Pairs are chosen so both halves usually live near each other: 1-1a/1-1b are DB rack + row machine, 1-3a/1-3b are pec deck + DB rack, 2-1a/2-1b are bench/dip station + pulldown, 2-2a/2-2b are DB rack (± cable stack). Days 3 and 4 are straight sets by design — no antagonist pairing exists for RDL/BSS, and Day 4 is already the short, all-machine day. Rules of engagement:
+Pairs are chosen so both halves usually live near each other: 1-1a/1-1b are DB rack + row machine, 1-3a/1-3b are now both at the DB rack (one station, two DB pairs — no holding, no etiquette question), 2-1a/2-1b are bench/dip station + pulldown, 2-2a/2-2b are DB rack (± cable stack). Days 3 and 4 are straight sets by design — no antagonist pairing exists for RDL/BSS, and Day 4 is already the short, all-machine day. Rules of engagement:
 1. Only hold two stations if the gym is quiet enough that it isn't rude.
 2. If you can't, run straight sets at **60–90 s rest** and accept ~10–15 extra minutes on Day 1 or 2. The superset saves time; it does not add growth. Nothing is lost but the clock.
 3. Never let station-hunting break the rep log. A substituted lift gets logged as the substitute, on its own progression line.
@@ -149,7 +151,7 @@ Pairs are chosen so both halves usually live near each other: 1-1a/1-1b are DB r
 Per-session stimulus × completion rate × weeks sustained (exercises.md, "What optimal means"). These three moves buy completion rate and weeks-sustained at ~zero stimulus cost — cheap insurance, not new stimulus, so they don't show up in the set/rep tables above.
 
 - **Minimum viable session.** Short on time or motivation: run only the first pair/exercise of that day (1-1a/1-1b, 2-1a/2-1b, 3-1, or 4-1) at 2 sets each, same RIR, and stop. Exception-only floor for a bad day, not a program variant — treating it as the default forfeits most of the week's volume. Log it as a partial session, not a skip.
-- **Time ceiling.** Session running past ~45 min: drop the last isolation slot (1-3b, 2-3, 3-4, or 4-4) rather than rushing the working sets or grinding through. Costs the lowest-priority volume in the program — side/rear delts, arms, calves are already at the deliberately low shoulder of the responsive plateau — never the compounds.
+- **Time ceiling.** Session running past ~45 min: drop the last isolation slot (1-3b, 2-3, 3-4, or 4-4) rather than rushing the working sets or grinding through. Costs the lowest-priority volume in the program — side/rear delts, arms, calves are already at the deliberately low shoulder of the responsive plateau — never the compounds. **Drop the named slot, not whichever station is occupied.** On 2026-08-12 the slot that vanished was 1-3a, rear delts — the *least* well-dosed muscle in the program at 5 sets/wk — purely because the pec deck was busy. Station availability is not a priority ranking; it selects the wrong victim. 1-3b (side delts, 8 sets/wk) is the designated one.
 - **Fixed schedule.** Same four days/times each week, not a floating target. Context-consistency is the most robustly replicated habit-formation lever (medium confidence, general-behavior evidence, not RT-specific) and it costs zero stimulus.
 
 ## Progression

@@ -152,12 +152,14 @@ Excluded as decision criteria, unchanged: EMG amplitude (activation ≠ growth),
 **Wins on:** criteria 1, 3, plus unique unilateral coverage.
 **Sacrifices — audited and kept as-is:** DB-loaded BSS plausibly hits a grip/balance ceiling before the target muscle reaches 1–2 RIR once load climbs (vendor/coaching sources note straps become necessary), which could corrupt the criterion-2 progression signal. Not severe enough to change the pick. **Reopen condition:** if DB load approaches ~40–50 lb/hand and reps stall while legs still feel short of failure, add straps rather than swapping exercises.
 
-### 1-3a / 4-3 — Reverse pec deck (rear delt fly, flipped 2026-07-31)
+### 1-3a / 4-3 — Chest-supported DB reverse fly (flipped to DB 2026-08-12; was reverse pec deck, itself flipped 2026-07-31)
 **Target:** posterior deltoid.
 **Why a dedicated isolation slot, not redundant with 1-1b/2-1b:** rows cued elbows-tucked-to-torso (as chest-supported row typically is) bias lats/mid-back over posterior delt, which needs horizontal shoulder abduction with elbows flared to be loaded directly. No overlap-quantifying RCT was found, but the biomechanical distinction (row's pulling vector vs fly's abduction vector) is uncontested, and the slot is cheap.
-**Why reverse pec deck over DB bent-over fly as primary:** the DB version needs a sustained hip-hinge hold that is technique-sensitive (trap/lat compensation creeps in as the set fatigues) for no offsetting benefit — machine-vs-free-weight resistance curve is this framework's weakest criterion. The machine delivers the same abduction vector on a fixed path with cleaner increments.
-**Wins on:** criteria 2 and 3 directly; criterion 1 unchanged.
-**Sacrifices:** nothing identified. Volume caveat: even with this slot, rear delts land at only ~5 direct sets/wk (1-3a + 4-3) plus fractional row credit — below the 10–14 target, unquantified in the program's summary line. Flagged, not fixed here.
+**Why the machine was picked in July, and why that reasoning did not survive contact:** the July argument was that the DB version needs a sustained hip-hinge hold, technique-sensitive (trap/lat compensation creeps in as the set fatigues), for no offsetting benefit — machine-vs-free-weight resistance curve being this framework's weakest criterion. That argument was correct about the *standing bent-over* DB fly and silently assumed it was the only DB version. It is not. **Chest-down on a 30–45° incline bench removes the hinge hold entirely** — the bench holds the torso angle, so the one named sacrifice disappears while the abduction vector is unchanged. The machine's remaining edge is cleaner pin increments, which is worth less than 2.5 lb dumbbells cost, and worth nothing at all when the station is occupied.
+**Why it flipped:** 2026-08-12, Upper A — the pec deck was busy and all 3 sets were skipped. Zero rear delt work in the session. The user's own read: "nice but very busy." A station whose availability is a coin flip cannot hold the slot for the program's *least* well-dosed muscle. The DB version also collapses the 1-3a/1-3b superset onto a single station (DB rack), which removes the two-station-holding etiquette problem that the busy-gym rule otherwise has to arbitrate.
+**Wins on:** criterion 3 (friction/availability) decisively; criteria 1 and 2 unchanged — same vector, same rep range, same progression line, and 2.5 lb DB steps are *finer* than the pin stack's 10 lb.
+**Sacrifices:** fixed-path guidance, which the bench substantially replaces. Reverse pec deck stays as the named substitute — use it on the days it happens to be free, log it on the same line. Volume caveat unchanged: rear delts land at only ~5 direct sets/wk (1-3a + 4-3) plus fractional row credit — below the 10–14 target. Still flagged, still not fixed here; the flip makes those 5 sets *reliable*, which was the actual failure.
+**Reopen condition:** if the DB version's reps stall while the target still feels short of failure, or trap/upper-back compensation shows up despite the bench, go back to the machine and accept the availability risk.
 
 ### 2-3 / 4-4 — Standing calf raise (full stretch, myo-reps both sessions)
 **Target:** gastrocnemius primary, soleus secondary.
@@ -203,7 +205,7 @@ Slot codes are current (post-restructure); the original pass ran under the old t
 | 2-1b | Lat pulldown / pull-up | Low | Med (single popular station) | Low–med (pull-up harder) | Pull-up only — bodyweight ceiling before target muscle |
 | 2-1a | Flat DB press / dip | Low | Med | Low–med (dip: shoulder mobility) | No |
 | 3-2 | Bulgarian split squat | High (bench + DB + foot-distance trial-and-error each session) | Med (bench + DB; no longer shares a session with either press slot, since it's on Day 3 with RDL) | High (balance/coordination) | Yes — grip/balance ceiling before target muscle reaches failure (reopen: straps at ~40–50 lb/hand) |
-| 1-3a/4-3 | Rear delt fly (reverse pec deck) | Low (machine), was med (DB hip-hinge hold) | Low–med | Low, was med (DB version) | No |
+| 1-3a/4-3 | Rear delt fly (chest-supported DB, was reverse pec deck) | Low (DB rack + incline bench) | Low, was **high — measured**: station busy, whole slot skipped 2026-08-12 | Low (bench removes the hinge hold) | No |
 
 ### Adopted (friction removed, stimulus held constant)
 
@@ -213,7 +215,7 @@ Every row costs zero measured stimulus.
 |---|---|---|
 | 1-3b/2-2b (then A3b/B4a): cable → DB lateral raise | Worst contention point under the old templates — shared the cable stack with the triceps-extension slot in the same superset | RCT-proven equivalent (PMC12277279) |
 | 2-2a/3-4 (then A4b): incline → standing DB curl | A second dependency on the incline bench already used by the incline-press slot | No proven length-position advantage (PMC11906226) |
-| 1-3a/4-3 (then B3b): DB bent-over fly → reverse pec deck | The hip-hinge hold; fixed pin-loaded path also gives cleaner increments | Resistance curve is the weakest criterion |
+| 1-3a/4-3 (then B3b): DB bent-over fly → reverse pec deck → **chest-supported DB fly** (2026-08-12) | Round 1 removed the hip-hinge hold. Round 2 removed station contention — the pec deck is popular enough that a whole slot got skipped — while the incline bench keeps the hinge hold gone | Same abduction vector and rep range; 2.5 lb DB steps are finer than the 10 lb pin stack, so even the machine's one advantage is gone |
 | Calf-raise sequencing (then A5): filler between quad-primary sets, not a standalone block | Old Template A's time gap vs Template B | Pure sequencing. Superseded — calf raise now runs as its own myo-rep block (2-3/4-4) |
 | Fixed-substitute usage widened, all 13 slots: "station occupied" → "setup or skill is blocking the session" | Bounded by the anti-rationalization test (program.md, Fixed substitutions) | Subs were already vetted growth-equivalent; only *when* the equivalence is invoked changed |
 | 4×/week restructure (see above) | Session length and repetitiveness — the largest single adherence-lane change | Same weekly volume, ~40% shorter sessions; supersedes the 3×/week ruling below |

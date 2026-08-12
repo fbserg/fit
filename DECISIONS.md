@@ -168,6 +168,44 @@ That is why straps and the `@7` amendment above ship together.
 **Reopens if.** Wrist pain appears under a strapped bar (which would mean the load, not the grip,
 was the problem), or grip becomes a stated goal.
 
+### Rear delt fly moves off the pec deck and onto a bench, because availability beat the resistance curve
+**Ruling.** Both rear-delt slots (1-3a Upper A, 4-3 Lower B) run **chest-supported DB reverse fly**
+— face-down on a 30–45° incline bench at the DB rack — starting at 10 lb/hand, `dp(2.5lb, 12, 20)`,
+one shared progression line. Reverse pec deck is demoted to named substitute: use it on the days it
+is free, log it on the same line.
+**Why.** On 2026-08-12 the pec deck was occupied and all three sets were skipped — the session
+delivered zero rear delt work. The lifter's own read was "nice but very busy." Rear delts are the
+program's least well-dosed muscle at ~5 direct sets/wk against a 10–14 target (`exercises.md`), so
+they are the single worst slot to hang on a coin-flip station. The July ruling that picked the
+machine argued the DB version's hip-hinge hold was technique-sensitive for no offsetting benefit.
+That was true of the *standing bent-over* DB fly and it quietly assumed that was the only DB
+version — an incline bench holds the torso angle and deletes the hinge hold outright, so the one
+named sacrifice does not exist in the version now prescribed. The machine's surviving edge was
+cleaner increments; the pin stack steps 10 lb and dumbbells step 2.5 lb, so it loses that too.
+Bonus, not the reason: 1-3a/1-3b now both live at the DB rack, collapsing a two-station superset to
+one and retiring the "is it rude to hold both?" question for that pair.
+**The general form, which is the part worth keeping.** *A slot's exercise choice is only as good as
+the station's availability, and availability is measured, not assumed.* This gym has now produced
+two contention notes in three sessions (the rope attachment on 2026-08-10, the pec deck on
+2026-08-12). Where two options are growth-equivalent, the one that is never occupied wins, and
+"growth-equivalent" is doing no work in that sentence — a skipped set scores zero on every
+criterion.
+**Reopens if.** DB reps stall while the rear delts still feel short of failure, or trap/upper-back
+compensation shows up despite the bench — then back to the machine, accepting the availability risk.
+
+### Stop at the top of the rep range — overshooting reps costs progression
+**Ruling.** When a set reaches the printed maximum, rack it. Do not keep going because reps are
+available.
+**Why.** Mechanical, not philosophical. Liftosaur's `dp` raises each set's next-session minimum to
+completed reps + 1, **capped at the range maximum** (`liftosaur.md`). Reps past the cap therefore
+buy exactly nothing toward progression while spending fatigue that lands on the later sets of the
+same exercise. 2026-08-12 incline press is the worked example: 12, 12, 9, 10, 9 at 37.5 lb in a
+6–10 range. The two 12s were four wasted reps, and sets 3 and 5 came in under 10 — so the load
+increase did not trigger. Capping the first two sets at 10 plausibly makes all five 10s and moves
+the lift to 40 lb. Overshoot at low RPE is not a free bonus; it is a signal the load is too light,
+and the fix is the next dumbbell, not more reps.
+**Reopens if.** The rep-cap mechanic changes (it is app behavior, verified 2026-08-12, not theory).
+
 ### Rest intervals are the duration lever; warmup configuration is not
 **Ruling.** Per-line rest timers: 120 s compounds, 75 s isolation. Calf raise left at the global
 default.

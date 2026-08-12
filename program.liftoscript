@@ -1,44 +1,48 @@
 # Week 1
 ## Upper A
 // RPE key: @7 = 3 reps left in the tank, @9 = 1 left, @10 = nothing left. Rate honestly after the set.
-Incline Bench Press, Dumbbell / 5x6-10 / 37.5lb @9+ 120s / warmup: 1x8 20lb / superset: A / progress: dp(2.5lb, 6, 10)
-Incline Row / 4x8-12 / 27.5lb @9+ 120s / warmup: none / superset: A / progress: dp(2.5lb, 8, 12)
+// STOP AT THE TOP OF THE RANGE. Reps past the printed max are wasted - the app caps the next target at the max, so they buy no progression and only cost you the later sets. 2026-08-12: 12,12,9,10,9 on the press. Stopping the first two at 10 would probably have made all five 10s, which is what triggers the load increase.
+Incline Bench Press, Dumbbell / 5x10-10 / 37.5lb @9+ 120s / warmup: 1x8 20lb / superset: A / progress: dp(2.5lb, 6, 10)
+// Neutral grip (palms facing each other) is fine - it is the wrist-friendly option and hits the same targets. Use ONE grip for all sets so weeks compare cleanly.
+Incline Row / 2x12-12, 1x11-12, 1x12-12 / 27.5lb @9+ 120s / warmup: none / superset: A / progress: dp(2.5lb, 8, 12)
 // Overhead cable attachment, not a pushdown. Sets 1-2 at RIR 1. Set 3 is a DROP-SET: no rest, drop the weight ~20-30% the moment set 2 ends and keep going to true failure. If you rested 4 minutes and used the same weight, that was a straight set, not a drop set.
-Triceps Extension, Cable / 2x8-12 @9+, 1x8-12 @10+ / 20lb 75s / warmup: none / progress: dp(5lb, 8, 12)
-// Sets 1-2 at RIR 1. Set 3 is a finisher set to true failure (RIR 0).
-Reverse Fly, Leverage Machine / 2x12-20 @9+, 1x12-20 @10+ / 55lb 75s / warmup: none / superset: B / progress: dp(10lb, 12, 20)
+Triceps Extension, Cable / 1x11-12 @9+, 1x12-12 @9+, 1x9-12 @10+ / 22.5lb 75s / warmup: none / progress: dp(5lb, 8, 12)
+// Chest-supported: face-down on a 30-45 degree incline bench at the DB rack, NOT standing bent-over (the hinge hold is what got the DB version rejected in the first place; the bench removes it). Reverse pec deck is now the SUB, not the primary - use it only when it happens to be free. Sets 1-2 at RIR 1, set 3 is a finisher to true failure. 10lb is a deliberate low-ball - correct it inside set 1.
+Reverse Fly, Dumbbell / 2x12-20 @9+, 1x12-20 @10+ / 10lb 75s / warmup: none / superset: B / progress: dp(2.5lb, 12, 20)
 // Sets 1-3 at RIR 1. Set 4 is a finisher set to true failure (RIR 0).
-Lateral Raise / 3x12-20 @9+, 1x12-20 @10+ / 12.5lb 75s / warmup: none / superset: B / progress: dp(2.5lb, 12, 20)
+Lateral Raise / 1x15-20 @9+, 2x14-20 @9+, 1x13-20 @10+ / 12.5lb 75s / warmup: none / superset: B / progress: dp(2.5lb, 12, 20)
 ## Lower A
 // HINGE, not squat: push hips straight BACK, knees soft and fixed, bar slides down the thighs. Bottom = strong hamstring stretch, always BEFORE the lower back rounds - no need to reach the floor. Stand up by driving hips forward.
 // STRAPS if you have them. Session 1 (2026-08-11) ended on grip, not hamstrings: forearms gave out at 90lb and the last set dropped to 4 reps because the bar slipped, while back and legs were only "regular tired". Grip is not a goal of this program and straps keep load off the right wrist.
-// No straps? In order: chalk (fixes bar slip, not forearm fatigue) / stop at 4 sets rather than grinding a grip-limited fifth / trap bar if the gym has one. Rate the RPE off your HAMSTRINGS either way - if the set ended because your hands opened, that is not an @7, log it and note the cause.
-// Ramp lift, session 2 of 3: @7 (RIR 3), then @8 from session 3 on. With straps this is the first time the RPE is hamstring RPE rather than grip RPE, so the same bar weight will feel heavier. That is the ramp working, not a reason to add plates.
-Romanian Deadlift, Barbell / 4x7-10, 1x5-10 / 90lb @7+ 120s / warmup: 1x5 45lb, 1x5 70lb / progress: dp(10lb, 6, 10)
+// No straps? In order: chalk (fixes bar slip, not forearm fatigue) / stop at 4 sets rather than grinding a grip-limited fifth / trap bar if the gym has one. Rate the RPE off your HAMSTRINGS either way - if the set ended because your hands opened, that is not an @8, log it and note the cause.
+// Ramp lift, session 3 of 3 - the LAST ramp session: @8 (RIR 2), working weight from session 4 on. Session 2 was rated @8 off the grip, not the hamstrings; with straps this is the first hamstring-limited @8, so the same 90lb should now give 7-10 reps instead of 6.
+Romanian Deadlift, Barbell / 4x7-10, 1x5-10 / 90lb @8+ 120s / warmup: 1x5 45lb, 1x5 70lb / progress: dp(10lb, 6, 10)
 // 20lb per hand is the right load - sets 2-4 were 8 reps at RIR 1. Two 20lb dumbbells IS the prescription; the 40lb first set on 2026-08-11 was a misread, not a PR.
 Bulgarian Split Squat / 4x9-12 / 20lb @9+ 120s / warmup: none / progress: dp(5lb, 8, 12)
 // Overhead cable attachment, not a pushdown. Set 1 at RIR 1. Set 2 is a DROP-SET: no rest, drop the weight ~20-30% immediately and keep going to true failure.
-Triceps Extension, Cable / 1x8-12 @9+, 1x8-12 @10+ / 20lb 75s
+Triceps Extension, Cable / 1x11-12 @9+, 1x12-12 @10+ / 22.5lb 75s
 // Standing, not seated/preacher. Set 1 at RIR 1. Set 2 is a finisher set to true failure (RIR 0).
-Bicep Curl / 1x8-12 @9+, 1x8-12 @10+ / 22.5lb 75s
+Bicep Curl / 1x8-12 @9+, 1x8-12 @10+ / 22.5lb 75s / warmup: none
 ## Upper B
 // RPE key: @7 = 3 reps left in the tank, @9 = 1 left, @10 = nothing left. Rate honestly after the set.
+// STOP AT THE TOP OF THE RANGE - reps past the printed max buy no progression and cost the later sets.
 Bench Press, Dumbbell / 4x6-10 / 42.5lb @9+ 120s / warmup: 1x8 25lb / superset: C / progress: dp(2.5lb, 6, 10)
 // Any pulldown station works, neutral grip (palms facing) is fine - but use ONE station+grip for all 5 sets, so this week compares cleanly to last week.
 Lat Pulldown / 5x6-10 / 110lb @9+ 120s / warmup: none / superset: C / progress: dp(5lb, 6, 10)
 // Standing, not seated/preacher. Sets 1-2 at RIR 1. Set 3 is a finisher set to true failure (RIR 0). The finisher sits 2.5lb lighter on purpose - it is the set you took to 9 reps, not 12.
-Bicep Curl / 2x8-12 22.5lb @9+, 1x8-12 20lb @10+ / 75s / warmup: none / superset: D
+Bicep Curl / 2x8-12 22.5lb @9+, 1x8-12 20lb @10+ / 75s / superset: D
 // Sets 1-3 at RIR 1. Set 4 is a finisher set to true failure (RIR 0).
-Lateral Raise / 3x12-20 @9+, 1x12-20 @10+ / 12.5lb 75s / superset: D
+Lateral Raise / 1x15-20 @9+, 2x14-20 @9+, 1x13-20 @10+ / 12.5lb 75s / superset: D
 // Myo-reps: set 1 is the activation set at RIR 3-4; mini-sets of 3-5 reps to near-failure. The 20s timers are the protocol, not a bug. +10lb when the activation set hits 15.
 Standing Calf Raise, Leverage Machine / 1x12-15 @7+, 4x3-5 @10+ / 140lb 20s / warmup: none / progress: custom() {~ if (completedReps[1] >= 15) { weights += 10lb } ~}
 ## Lower B
 // RPE key: @7 = 3 reps left in the tank, @9 = 1 left, @10 = nothing left. Rate honestly after the set.
-// Never run before. 180lb is a confidence-C guess extrapolated from hack squats and leg press loading is machine-specific to the point of being incomparable - correct it inside the first set and do not read the number as progress.
+// NEVER RUN, four sessions in - this is the only day with no data, so quads get one exercise a week instead of two and the second calf slot never happens. Run it next.
+// 180lb is a confidence-C guess extrapolated from hack squats and leg press loading is machine-specific to the point of being incomparable - correct it inside the first set and do not read the number as progress.
 Leg Press / 5x6-10 / 180lb @8+ 120s / warmup: 1x8 90lb / progress: dp(10lb, 6, 10)
 // Hamstrings only. If Lower A was less than 3 days ago and they are still sore, run this at @8, not @10 - RIR 0 hamstring work on top of RDL soreness is the highest-strain-risk slot in the program.
 Seated Leg Curl / 4x8-12 / 85lb @10+ 120s / warmup: none / progress: dp(10lb, 8, 12)
-// Set 1 at RIR 1. Set 2 is a finisher set to true failure (RIR 0).
-Reverse Fly, Leverage Machine / 1x12-20 @9+, 1x12-20 @10+ / 55lb 75s
+// Chest-supported on a 30-45 degree incline bench at the DB rack, same as Upper A - one progression line, shared. Set 1 at RIR 1. Set 2 is a finisher set to true failure (RIR 0).
+Reverse Fly, Dumbbell / 1x12-20 @9+, 1x12-20 @10+ / 10lb 75s / warmup: none
 // Myo-reps: set 1 is the activation set at RIR 3-4; mini-sets of 3-5 reps to near-failure. The 20s timers are the protocol, not a bug.
 Standing Calf Raise, Leverage Machine / 1x12-15 @7+, 3x3-5 @10+ / 140lb 20s
