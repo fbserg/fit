@@ -19,6 +19,11 @@ pass and does not inherit these conclusions.
   own analysis, and with zero shoulder or wrist exposure.
 - **The bounding-down-stairs habit is the only thing here with a downside**, and the downside is
   a fall on concrete, not accumulated wear.
+- **Squash (§9, added 2026-08-12) is nutritionally invisible at 1×/week and does not interfere
+  with the lifting program.** Its only finding that changes anything is on axis 4 and it is not
+  about muscle: wear eye protection. A claim that squash needed a 48–72 h no-lower-body buffer was
+  retracted in §9 — it had no source, and it had already been used to justify rebuilding the
+  program.
 - **Eight first-pass claims were wrong** and are logged in §7 rather than edited out, per
   `PLAYBOOK.md` rule 13. Two were outright backwards: which direction stairs load the kneecap,
   and whether traffic lights raise or lower the average cost of a city ride. Both energy costs
@@ -375,3 +380,103 @@ Corrected to "attenuated well below a hypertrophy-driving stimulus." See §4.
   the good direction for a single study to point, but it is still a single study.
 - **Direct calorimetry on bounding down stairs**, which does not exist. The energy figures in §2
   are for normal descent; the bounding case is an extrapolation, flagged as such.
+
+## 9. Squash — the court-sport pass, run 2026-08-12
+
+The last unanalyzed regular activity in the project. `INTAKE.md` has listed court sport as
+genuinely open since 2026-08-01 and `CLAUDE.md` warns explicitly that squash does **not** inherit
+the cycling verdict. It now has its own pass, on the same four axes in the same order.
+
+**Input, from the lifter (2026-08-12):** one Thursday session per week, **~60 min booked, ~40 min
+of actual play**, recreational — "we're not pros so it's not just absolutely killer."
+
+### Axis 1 — energy
+
+Same method as §2: net METs = gross − 1, at 69.9 kg (154 lb), so net kcal/min = (MET−1) × 1.223.
+
+| Component | MET | Source grade | Net kcal |
+|---|---|---|---|
+| 40 min play, lower bound | 7.3 | Compendium 15511 "squash, general" — desk value | ~308 |
+| 40 min play, upper bound | ~10 | club-level match play at ~70% VO₂max — measured, but not on this player | ~440 |
+| 20 min warmup / water / chat | ~2 | assumed | ~24 |
+| **Session total** | | | **~330–465 net** |
+
+The Compendium's *other* squash entry (15510, Taylor code) is **12 METs** and would give ~540. It
+is a competitive-play value and is deliberately not used — but note §7's repeated lesson that on
+both prior activities the measured value came in *above* the desk value, in the same direction.
+The honest read is that ~465 is a likelier miss than ~330. **Confidence: C.** Nothing here was
+measured on this player; that is what the Health Connect ingest exists to fix.
+
+| Activity | Weekly net | lb/wk equivalent | kcal/day averaged | Verdict |
+|---|---|---|---|---|
+| Squash, 1×/wk | ~330–465 | 0.09–0.13 | 47–66 | Below the ±150 step. No adjustment on its own. |
+| Cycling, 2×/wk (§2) | ~426–565 | 0.12–0.16 | 61–81 | Below the step, closer than it looks. |
+| **Squash 1× + cycling 2×** | **~756–1030** | **0.22–0.29** | **108–147** | **At the threshold. This is the real trigger.** |
+
+**Axis 1 returns "irrelevant" for squash alone, and that retires most of the argument** — which is
+exactly what this axis is for. But the *combined* tally is the finding worth keeping: squash counts
+as the third non-lifting session the moment cycling starts at 2×/week, and 108–147 kcal/day sits
+against a ±150 step with no margin left. §6's "revisit past ~3/week" rule fires on the tally, not
+on any single activity.
+
+**Thursday's 2300 → 2500 recode, priced honestly.** It covers ~200 kcal of a ~400 kcal cost — right
+sign, roughly half the magnitude, and entirely inside the noise floor. It is **bookkeeping, not a
+lever**: it exists because coding the week's highest-output day as a rest day is indefensible on its
+face, not because 200 kcal will show up on the scale. Note the tension with this section's own rule
+that a *habitual* activity is already absorbed by the weekly trend and does not need paying for —
+that rule presumes a trend exists. There are zero weigh-ins since 2026-07-27, so nothing has been
+absorbed by anything. The recode is superseded the moment the loop has data.
+
+### Axis 2 — adaptation
+
+One 40-minute intermittent session per week sits **below the frequency threshold for meaningful
+VO₂max adaptation** (~2–3×/wk minimum). It contributes **zero hypertrophy** — no progressive
+overload, no sustained tension at length, same verdict `swimming.md` reached by the same reasoning.
+
+This is not a criticism. The dose has not saturated; it was never an adaptation dose. Squash is
+recreation, and it should be priced as recreation and not defended as training.
+
+### Axis 3 — interference
+
+**Negligible, and this axis was previously answered wrongly in conversation.** Concurrent-training
+interference scales with endurance frequency and duration and is modality-graded (eccentric/impact
+work interferes; cycling and swimming do not). One 40-min intermittent session per week is at the
+bottom of every published dose-response, and hypertrophy is the outcome *least* affected by
+concurrent training — strength and power are hit harder.
+
+**Retracted here, in place:** a claim made 2026-08-12 that squash required a **48–72 h no-lower-body
+window on both sides**, which was load-bearing for a proposed rebuild of all four training
+templates. It had no source in this repo or in the literature — the only systematic review of
+racket-sport physiological demands found no squash studies at all and reports no muscle-damage
+marker for any racket sport. The nearest measurement runs the other way: a 3-hour simulated tennis
+match dropped 1RM squat 35% immediately post-match with strength and jump height **not significantly
+different from baseline at 24 h**, described by the authors as mild muscle damage. This lifter is
+additionally protected twice over — the repeated-bout effect never lapses at weekly intervals, and
+resistance-trained men already carry the adaptation. The full ruling and what it cost is in
+`DECISIONS.md`, "The squash restructure is refused."
+
+Practical consequence: **lifting legs the day after squash is fine**, and lifting them the day
+before is a squash-*performance* preference, not injury prevention.
+
+### Axis 4 — risk, which is again the only axis that changes anything
+
+| Risk | Severity | Read |
+|---|---|---|
+| **Eye** | **Catastrophic, cheap to eliminate** | A squash ball is ~40 mm and fits *inside* the adult orbital rim, so the bone that protects you from most projectiles does not protect you from this one. Racquet strikes add to it. Protective eyewear is the single highest-value object in the sport and most recreational players don't wear it. **This is the one actionable item on this page.** |
+| **Right wrist** | Moderate, already tracked | Recurring same-side load on the rehabbed wrist, already named in `CLAUDE.md`. Green at 42.5 lb DB pressing + regular squash as of 2026-08-10. The settled schedule helps by accident: only one pressing day is adjacent to Thursday, and the day *after* is Lower B — all-machine, the lightest wrist day in the program. |
+| **Achilles** | Low probability, high consequence | Racquet sports are over-represented in Achilles rupture among 30–50-year-old recreational males; the mechanism is explosive push-off out of a lunge. Interaction worth naming and **not** acting on: Wednesday's calf myo-reps run to true failure the day before Thursday. That is mechanism reasoning with nothing measured behind it — precisely the tier of claim that produced the retraction in Axis 3 above, so it is logged as a canary, not a rule. The free option already exists if it ever matters: calf raise is already Upper B's designated time-ceiling drop slot. |
+| **Ankle / knee** | Ordinary | Standard court-sport cutting risk. Strength training reduces acute sports injury rates substantially (Lauersen 2014, 25 RCTs, 26,610 subjects), so the lifting program is protective here, not additive. |
+
+### Prescription
+
+1. **Keep playing. Change nothing about the training program for it.** Axis 1 says it's invisible,
+   axis 3 says it doesn't interfere, axis 2 says it was never training.
+2. **Buy eye protection.** Highest expected-value action in this entire document.
+3. **Thursday eats as a 2500 day.** Bookkeeping, not a lever — see Axis 1.
+4. **Watch the tally, not the activity.** Squash + cycling 2×/wk = 108–147 kcal/day, at the ±150
+   threshold. Adding a third weekly ride is where calories come back.
+5. **Measure it.** Duration and HR via the Health Connect ingest, 3–4 sessions, plus a Friday
+   next-morning soreness check (quad / calf / hamstring, 0–10). That converts every C-grade number
+   above into a measured one, and it directly tests the only live question left: whether Friday's
+   Lower B rep quality actually differs from Monday/Tuesday lower work. Four Fridays settles it
+   better than any literature can.
