@@ -124,6 +124,29 @@ app and were never going to; the RPE token is the only thing the lifter is actua
 The ramp is now encoded in the number — `@7` for session 2, `@8` from session 3 — and the comment
 only explains it. Any future ramp must move the token, not the prose.
 
+### Session order alternates upper/lower — and it is a fifth-order variable
+**Ruling.** Days run `Upper A → Lower A → Upper B → Lower B`, never in the old numeric order.
+Named, not renumbered, so history records logged as "Day 2" keep meaning what they meant.
+**Why.** Enumerated rather than argued. Every muscle appears on exactly two days, and the day-pairs
+are (1,2)×3 — chest, lats, side delts, 26 sets — and (3,4)×2 — hamstrings, quads, 18 sets. Numeric
+order collides both of the big ones; alternating collides only the 5–9-set arm and calf pairs.
+Averaged over all 35 possible four-day weekday patterns: `1-2-3-4` scores 41.7, `1-3-2-4` and
+`1-4-2-3` both score 20.8 and are exactly symmetric. The finding is calendar-independent, which is
+why it shipped before the calendar was settled. Stable under four different fatigue-penalty curves
+and not driven by the hamstring risk multiplier (40.6 → 37.9 with it removed).
+**The honest size of this.** The score measures acute force decrement on the second exposure, and
+that does *not* convert cleanly into hypertrophy: at a fixed RIR target a fatigued muscle simply
+reaches that RIR at fewer reps, and the set still counts as a hard set — hard sets are the dose
+variable, volume-load is not. The real payoff is a clean progression signal, since double
+progression reads fatigue-induced rep loss as failure-to-progress and stalls the load for the
+wrong reason. Worth <1 point of achievable hypertrophy against ~15 for fixing adherence. It shipped
+because it was free, not because it mattered.
+**What this corrects.** The 2026-08-12 slot ruling picked numeric order *because it made the app's
+`nextDay` self-serve*, then defended it with "adherence beats optimality" — invoking a real
+principle as a trump card without pricing either side, which is the exact move this document
+exists to refuse. The friction was also fake: renaming the days removes it entirely.
+**Reopens if.** The program's exercise-to-day assignment changes, which would redraw the pair table.
+
 ### Straps on the Romanian deadlift, from session 2 on
 **Ruling.** Straps for every RDL working set. Not for anything else. **Amended same day — the
 lifter does not own straps, so the ruling ships with a fallback ladder:** chalk (fixes bar slip,
