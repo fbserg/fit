@@ -61,6 +61,22 @@ programs at `planner.weeks[].days[].exerciseText` as raw Liftoscript. The legacy
 `weeks`/`days`/`exercises` arrays are empty. Authoring is therefore string generation, and
 `push` only has to split on `# Week` / `## Day` headers.
 
+### The repo is not the source of truth between sessions — pull, merge, push
+**Ruling.** `program.liftoscript` is authoritative only at the moment it is pushed. Every edit
+after the first logged session must be made on the *live* text pulled from the account, not on the
+repo copy, and the repo file is then overwritten with what was pushed. Never push a repo file that
+predates a session.
+**Why.** Found 2026-08-12, three sessions in. `dp()` does not keep progression in a side table —
+it rewrites `exerciseText` in place. After Days 1–3 the live program read
+`Romanian Deadlift ... 4x7-10, 1x5-10` and `Bicep Curl / 2x8-12 22.5lb @9+, 1x8-12 20lb @10+`,
+neither of which exists in the repo. Liftosaur's dp raises each set's *minimum* to last session's
+completed reps + 1 (a beat-last-time target) and advances weight per set index, so state is
+per-set and accumulates fast. Pushing the repo file verbatim would have silently reverted every
+bit of it. `liftosaur.md`'s "this repo can be the source of truth and the app is just a runner"
+was true before any set was logged and false afterwards.
+**Reopens if.** Liftosaur adds a progression store separate from the program text, or `push` grows
+a merge step that reconciles automatically instead of relying on the operator to pull first.
+
 ### Results store: append-only JSONL, not SQLite
 **Ruling.** `snapshot` writes a verbatim raw JSON snapshot, a canonical `history.jsonl` upserted by
 workout id, and a flattened `completed_sets.jsonl` regenerated from it. All under `data/`, gitignored.
@@ -101,6 +117,28 @@ consequence failure mode in the program — the ramp is a property of the lift, 
 **Reopens if.** New joint or tendon pain persisting >48 h, or a sharp drop in a lift's rep quality
 at unchanged load. That triggers a per-lift back-off of ~15% and a two-week re-ramp, not a
 program-wide reset.
+**Amended 2026-08-12 — a ramp described in a comment is not a ramp.** The RDL line read
+`5x6-10 95lb @8+` while the comment above it said "weeks 1-3 at RIR 4-3-2". @8 is RIR 2. Session 1
+was therefore prescribed at week-3 intensity and trained that way. Comments do not constrain the
+app and were never going to; the RPE token is the only thing the lifter is actually shown per set.
+The ramp is now encoded in the number — `@7` for session 2, `@8` from session 3 — and the comment
+only explains it. Any future ramp must move the token, not the prose.
+
+### Straps on the Romanian deadlift, from session 2 on
+**Ruling.** Straps for every RDL working set. Not for anything else.
+**Why.** Session 1 (2026-08-11) ended on grip: forearm pump, the fifth set fell to 4 reps because
+the bar slipped, and the lifter's own note put back and legs at "regular tired" — 90 lb on a lift
+whose Hevy history shows 115 × 8. Grip endurance is the binding constraint and it is not a target
+of this program, so it was capping the hamstring stimulus for nothing. Straps also remove bar load
+from the rehabbed right wrist, which is free upside given recurring squash load on the same side.
+Mixed grip was rejected (asymmetric spinal loading on the one lift where lumbar position is the
+whole safety case) and so was hook grip (pain, for a benefit nobody wants here).
+**Note the interaction.** Grip failure was acting as an accidental governor — the logged @8 was
+grip RPE, so the hamstrings likely got something near the RIR 4 the ramp actually wanted. Removing
+the governor without lowering the RPE target would have raised true hamstring load in one step.
+That is why straps and the `@7` amendment above ship together.
+**Reopens if.** Wrist pain appears under a strapped bar (which would mean the load, not the grip,
+was the problem), or grip becomes a stated goal.
 
 ### Rest intervals are the duration lever; warmup configuration is not
 **Ruling.** Per-line rest timers: 120 s compounds, 75 s isolation. Calf raise left at the global

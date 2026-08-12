@@ -16,7 +16,7 @@ sync returned `clean`. The app opens on Day 1 with the per-set RPE splits render
 Version history: `cc058146` (v1) → `14002621` (v2, shared progression + per-set RPE) →
 `294fd952` (v3, `warmup: none`) → `11b2a78c` (v4, rest timers + comment placement fix).
 
-Why Liftosaur and not Hevy: Hevy's free tier can't express a program with per-exercise progression rules, and the paid tier was ruled out. Liftosaur's whole program is one text file (Liftoscript), which means this repo can be the source of truth and the app is just a runner. Program authoring, the web editor, link import, and JSON/CSV export are all free and account-free; only the REST API and MCP server sit behind premium, which this workflow doesn't need.
+Why Liftosaur and not Hevy: Hevy's free tier can't express a program with per-exercise progression rules, and the paid tier was ruled out. Liftosaur's whole program is one text file (Liftoscript), which means this repo can be the source of truth and the app is just a runner — with the large caveat below that the app writes progression state back into that same text, so the repo is authoritative only at push time. Program authoring, the web editor, link import, and JSON/CSV export are all free and account-free; only the REST API and MCP server sit behind premium, which this workflow doesn't need.
 
 ## The script
 
@@ -142,6 +142,37 @@ sets. Now encoded natively: `1x12-15 @7+ 20s, 4x3-5 @10+ 20s` (Day 4: 3 mini-set
 progression adding 10 lb when the activation set hits 15. See DECISIONS.md, overturned ruling.
 
 **Do not treat the app's estimate as a measurement of this program.** Time an actual session instead — that is the only number that settles whether 32–38 min was realistic.
+
+## The app rewrites the program, so pushing the repo file will revert your training
+
+**Found 2026-08-12, after three logged sessions.** `dp()` has no side table — it edits
+`planner.weeks[].days[].exerciseText` in place. Live vs repo at that moment:
+
+| Line | Repo | Live after 3 sessions |
+|---|---|---|
+| Romanian Deadlift | `5x6-10 95lb @8+` | `4x7-10, 1x5-10 / 95lb @8+` |
+| Bulgarian Split Squat | `4x8-12 20lb` | `1x7-12, 3x9-12 / 20lb` |
+| Bicep Curl (Day 2) | `2x8-12 20lb @9+, 1x8-12 20lb @10+` | `2x8-12 22.5lb @9+, 1x8-12 20lb @10+` |
+| Triceps Extension (Day 1) | `2x8-12 22.5lb @9+, ...` | `1x11-12 @9+, 1x9-12 @9+, ...` |
+
+Two mechanics to know. Liftosaur's `dp` raises each set's **minimum** to last session's completed
+reps + 1 — a beat-last-time target, not a fixed range — and it advances **weight per set index**,
+which is why one bicep set sits at 22.5 and the finisher at 20. State is per set, and it diverges
+within a single session.
+
+**Procedure — always three steps, never one:**
+
+1. `snapshot` (or `pull`), and extract the live `exerciseText` from the newest `data/liftosaur/raw/*.json`.
+2. Edit *that* text. Keep the exercise names exactly as the app serialized them (it drops default
+   equipment: `Incline Row`, not `Incline Row, Dumbbell`) — renaming forks a new exercise and
+   orphans its state.
+3. `push`, then snapshot again and diff. Overwrite `program.liftoscript` with what was pushed so
+   the repo matches the account.
+
+`warmup:` accepts explicit sets — `warmup: 1x5 45lb, 1x5 70lb` — and survives the round-trip, so
+the auto-generated 30/50/80% ramp can be replaced rather than only disabled. Worth doing on
+barbell lifts: at a 90 lb RDL the percentages rendered as 45 / 47.5 / 75, two sets 2.5 lb apart
+and one not loadable.
 
 ## Open
 

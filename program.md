@@ -74,6 +74,8 @@ Sub-letters (1a/1b) are supersets — alternate back and forth, busy-gym rule be
 
 No supersets — RDL and BSS aren't antagonists, and this is the same RDL+BSS pairing the old Template B already ran (exercises.md, B1 rationale) — retained here, not a new fix. Straight sets at 90–120 s rest; this is the day most likely to run long in a busy gym.
 
+**RDL: straps, and the ramp lives in the RPE token.** Session 1 (2026-08-11) ended on grip rather than hamstrings, so straps are mandatory from session 2 — grip endurance is not a target of this program and it was capping the stimulus. The 3-week ramp is now written as `@7` → `@8` in the script instead of described in a comment the app never enforced; both rulings and the interaction between them are in `DECISIONS.md`.
+
 **Day 4 — squat + curl (fastest day; machine-supported, low setup friction)**
 | Slot | Exercise | Sets × reps | RIR |
 |---|---|---|---|

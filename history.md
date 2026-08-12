@@ -118,6 +118,18 @@ None of these carry an RPE, so there is no way to know whether `80 lb × 10` was
 four in reserve. Treat the whole table as a starting point that double progression will correct
 within two or three sessions — its real job is catching a wildly wrong first guess, not being right.
 
+**Scored against the first real Day 3 (2026-08-11).** The table's job was catching a wildly wrong
+guess, so here is how the two C rows and the balance claim actually did:
+
+| Prediction | Outcome |
+|---|---|
+| Split squat 20 lb (C) | **Right.** Sets 2–4 were 8 reps at RIR 1 — bottom of the 8–12 range, no correction needed. A confidence-C guess from a barbell squat landed. |
+| "Limited by balance rather than load" | **Wrong.** Balance was a non-issue; the report was "massive pump, very hard to walk". Load-limited from set one. |
+| RDL 95 lb from 115 × 8 (A) | **Wrong for an unmodelled reason.** He trained 90 and the limiter was grip, not hamstrings — the table extrapolates the target muscle and is blind to whichever tissue actually fails first after six months off. |
+
+The lesson is the third row: a starting-load table transfers *strength at the prime mover* and
+silently assumes every supporting link came back at the same rate. Grip did not.
+
 ## A progression bug that only appeared once the weights were real
 
 Writing concrete loads exposed something the abstract program could not show: `dp(5lb, …)` on a
