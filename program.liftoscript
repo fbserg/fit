@@ -37,11 +37,13 @@ Lateral Raise / 1x15-20 @9+, 2x14-20 @9+, 1x13-20 @10+ / 12.5lb 75s / superset: 
 Standing Calf Raise, Leverage Machine / 1x12-15 @7+, 4x3-5 @10+ / 140lb 20s / warmup: none / progress: custom() {~ if (completedReps[1] >= 15) { weights += 10lb } ~}
 ## Lower B
 // RPE key: @7 = 3 reps left in the tank, @9 = 1 left, @10 = nothing left. Rate honestly after the set.
-// NEVER RUN, four sessions in - this is the only day with no data, so quads get one exercise a week instead of two and the second calf slot never happens. Run it next.
+// NEVER RUN, four sessions in - the only day with no data. Run it FRIDAY 2026-08-14: override the pointer once, and it advances 4 -> 1 so Monday starts Upper A with no override ever needed again.
+// This is deliberately the day after squash. All-machine, no balance demand, lightest wrist load in the program - the right session to run on court-tired legs, not the wrong one.
 // 180lb is a confidence-C guess extrapolated from hack squats and leg press loading is machine-specific to the point of being incomparable - correct it inside the first set and do not read the number as progress.
 Leg Press / 5x6-10 / 180lb @8+ 120s / warmup: 1x8 90lb / progress: dp(10lb, 6, 10)
-// Hamstrings only. If Lower A was less than 3 days ago and they are still sore, run this at @8, not @10 - RIR 0 hamstring work on top of RDL soreness is the highest-strain-risk slot in the program.
-Seated Leg Curl / 4x8-12 / 85lb @10+ 120s / warmup: none / progress: dp(10lb, 8, 12)
+// FIRST EVER EXPOSURE - run this at @8, not @10, and correct the 85lb inside set 1. That number is extrapolated from 6-9-month-old Hevy data with no RPE anywhere on it, so it has zero observations behind it. Move to @10 only once you have run this lift twice.
+// Standing rule after that: hamstrings only, and if Lower A was less than 3 days ago and they are still sore, stay at @8 - RIR 0 hamstring work on top of RDL soreness is the highest-strain-risk slot in the program.
+Seated Leg Curl / 4x8-12 / 85lb @8+ 120s / warmup: none / progress: dp(10lb, 8, 12)
 // Chest-supported on a 30-45 degree incline bench at the DB rack, same as Upper A - one progression line, shared. Set 1 at RIR 1. Set 2 is a finisher set to true failure (RIR 0).
 Reverse Fly, Dumbbell / 1x12-20 @9+, 1x12-20 @10+ / 10lb 75s / warmup: none
 // Myo-reps: set 1 is the activation set at RIR 3-4; mini-sets of 3-5 reps to near-failure. The 20s timers are the protocol, not a bug.

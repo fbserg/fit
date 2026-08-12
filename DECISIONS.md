@@ -126,7 +126,16 @@ only explains it. Any future ramp must move the token, not the prose.
 
 ### Session order alternates upper/lower — and it is a fifth-order variable
 **Ruling.** Days run `Upper A → Lower A → Upper B → Lower B`, never in the old numeric order.
-Named, not renumbered, so history records logged as "Day 2" keep meaning what they meant.
+
+**Correction, 2026-08-12 (believed at the time: "named, not renumbered, so history records logged
+as 'Day 2' keep meaning what they meant"). That sentence was false.** Comparing
+`data/liftosaur/raw/2026-08-12T18-20-57Z.json` against `…18-38-50Z.json`, slots 2 and 3 physically
+swapped contents: slot 2's first working line went from `Bench Press, Dumbbell` to
+`Romanian Deadlift, Barbell`. The days were renamed *and* reordered. So `history.jsonl`'s
+2026-08-10 record carries `day=2` meaning the flat-press day, while every future Lower A record
+will carry `day=2` meaning the hinge day. **All analysis must key on `dayName` plus exercise id,
+never on the day index.** This is also a standing argument against further slot reordering — every
+reorder silently reinterprets the existing log.
 **Why.** Enumerated rather than argued. Every muscle appears on exactly two days, and the day-pairs
 are (1,2)×3 — chest, lats, side delts, 26 sets — and (3,4)×2 — hamstrings, quads, 18 sets. Numeric
 order collides both of the big ones; alternating collides only the 5–9-set arm and calf pairs.
@@ -146,6 +155,90 @@ because it was free, not because it mattered.
 principle as a trump card without pricing either side, which is the exact move this document
 exists to refuse. The friction was also fake: renaming the days removes it entirely.
 **Reopens if.** The program's exercise-to-day assignment changes, which would redraw the pair table.
+
+### The squash restructure is refused — the premise that forced it was false
+**Ruling.** Thursday squash changes **nothing structural**. The four templates stay byte for byte.
+Squash is handled by a calendar phase that already exists, one execution rule, and one calorie
+recode. Specifically: `Mon Upper A · Tue Lower A · Wed Upper B · Thu squash · Fri Lower B`, which
+is the phase the `nextDay` pointer lands on for free once Lower B is run.
+
+**What was proposed and rejected.** Splitting the lower work by muscle (posterior Monday, anterior
+Tuesday) and moving both lower days to Mon+Tue, so no lower session sat adjacent to Thursday.
+Same 13 exercises, same 68 sets, all nine weekly targets met — the arithmetic was correct and
+verified independently. It fails on premise and on distribution, not on bookkeeping.
+
+**Why.** Three findings, in descending order of force. Established by a five-lens adversarial
+panel plus two competing blank-sheet designs and a judge, 2026-08-12.
+
+1. **"No arrangement of the current templates satisfies the constraint" is false by enumeration.**
+   Of the 24 assignments of the four templates to Mon/Tue/Wed/Fri, four put both lower days on
+   Mon+Tue with zero template edits. The rebuild was justified by needing to spend the
+   upper/lower alternation ruling — but spending that ruling *alone* was sufficient. The argument
+   contradicted itself: it paid twice for something available once.
+2. **The load-bearing number — a "48–72 h" isolation window — has no source.** Not in this repo
+   (`data/` holds zero squash sessions, zero HR, zero duration, zero soreness) and not in the
+   literature: the only systematic review of racket-sport physiological demands found no squash
+   studies at all and reports no muscle-damage marker for any racket sport. The nearest measured
+   analogue runs the other way — a 3-hour simulated tennis match dropped 1RM squat 35% immediately
+   post-match, with strength and jump height **not significantly different from baseline at 24 h**
+   ("mild muscle damage"). One weekly recreational game in a habituated, resistance-trained player
+   sits at the damage floor twice over: the repeated-bout effect never lapses at weekly intervals,
+   and resistance training already confers the adaptation. `cardio.md` mandates pricing energy
+   cost *first*; that axis was skipped entirely and axes 3–4 were run by assertion.
+   *This is a PLAYBOOK rule-16 violation: a C-tier recalled number made load-bearing without
+   derivation, two weeks before the instrument that would measure it ships.*
+3. **The distribution moves the wrong way on the one axis that matters.** Under the current
+   templates each lower day carries both quads and hams, so a missed session still delivers 4–5
+   of each. Under the proposal a missed Monday **zeroes** hamstrings and a missed Tuesday zeroes
+   quads. At an observed completion rate below 1.0, concentrating a muscle into a single weekly
+   session is strictly worse — and adherence is the ~15-point variable while layout is the
+   <1-point one. `program.md` line 18 says frequency's "only real benefit is indirect: spreading
+   sets prevents junk volume late in a session"; the proposal cited the first half of that
+   sentence to license violating the second.
+
+**What survives from it.** Nothing structural. The day-*before* half of the squash concern is
+retained as a **squash-performance preference, not injury prevention** — the chosen phase puts an
+upper day before Thursday anyway, so it costs nothing. The day-*after* half is dropped outright:
+Lower B is all-machine, no balance demand, and the lightest wrist day in the program, which makes
+it the *right* session to run after a court sport rather than the wrong one.
+
+**The diagnosis was also weaker than it looked.** "He picks the session on arrival and the leg day
+loses" rests on n=1, with a confound this project caused: between the 18:20 and 18:38 snapshots on
+2026-08-12 the day list was renamed *and* slots 2/3 swapped contents. He opened, 58 minutes later,
+an app whose day list had just been rewritten with names he had never seen, and started at the top.
+`nextDay` read 4 (Leg Press) throughout. That is a further reason not to rebuild templates on it —
+and no reason at all not to ship the free execution rule.
+
+**Honest effect size.** The whole layout question is worth 1–3 points of achievable hypertrophy,
+most of that being "do not concentrate a muscle into one session" rather than "pick this weekday."
+The execution rule below sits on the ~15-point adherence axis and costs one sentence. Recoding
+Thursday's calories sits on the ~10-point nutrition axis and costs nothing. Protein, sleep, and a
+weigh-in loop with zero data points 16 days after baseline remain untouched by any of this.
+**The correct amount of further effort to spend on where the leg press goes is zero until
+2026-08-30.**
+
+**Reopens if.** Lower B is skipped again in the two-week window (Mon 2026-08-17 → Sun 2026-08-30)
+*with the pointer bound and no rename confound*. Then the answer is the blank-sheet alternative —
+four mixed sessions, one lower compound each, every muscle 2×/week, zero adjacent-day collisions
+(arithmetic already verified: 14+19+16+19 = 68, all nine targets exact). Adopt it then, not now.
+Also reopens if measured squash data (duration + HR + next-morning soreness, 3–4 sessions) shows
+real next-day impairment — which is what `tools/health_connect.py` was built to capture.
+
+### The app's pointer is the session — no picking on arrival
+**Ruling.** Whatever `nextDay` offers when you open the app **is** the workout. The only legal
+deviation is a logged note saying why. Bind the *calendar* (Mon/Tue/Wed/Fri, same time); let the
+app bind the *content*. A missed session is not made up and does not re-anchor — the pointer keeps
+its order and the weekday mapping rotates by one.
+**Why.** The rotation is the feature. It is what makes it structurally impossible for any one
+template to be systematically starved, which is exactly what self-selection did to Lower B for
+four sessions. This is the whole intervention that the restructure was trying and failing to buy
+with geometry: no template arrangement can fix a tap. It sits on the ~15-point adherence axis and
+costs one sentence.
+**One override, once.** Friday 2026-08-14: the pointer reads 2 (Lower A). Override to Lower B. That
+gives Lower B its first-ever run, closes the week at eight of nine muscle targets, and advances the
+pointer 4 → 1 so Monday starts the recurring phase with no further override ever needed.
+**Reopens if.** Sessions-per-week does not improve over Mon 2026-08-17 → Sun 2026-08-30. Judge on
+sessions-per-week, **not** load progression, and do not touch volume or templates before 08-30.
 
 ### Straps on the Romanian deadlift, from session 2 on
 **Ruling.** Straps for every RDL working set. Not for anything else. **Amended same day — the
