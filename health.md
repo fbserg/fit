@@ -46,8 +46,77 @@ which one. Google shipped that job natively, so use it.
 2. **Health Connect → Backup and restore → Scheduled export** — set **daily**, save to **OneDrive**.
    Requires Android 14+.
 3. Confirm it lands in a folder OneDrive syncs, then check from here:
-   `python3 tools/health_connect.py schema`
-4. Once the schema is known, `ingest` gets written and folded into `tools/daily_pull.sh`.
+   `python3 tools/health_connect.py schema`. That prints a `mapping check` block — hand-verify it
+   against the table in "Schema, and how it was established" below before trusting any ingested
+   row. This is the one verification the test suite cannot do for you.
+4. Nothing else. `ingest` is written, tested, and already wired into `tools/daily_pull.sh` — the
+   loop starts on its own the first night an export lands.
+
+**Also check, once, on the phone:** Health Connect → Manage data → **Auto-delete must be OFF**
+(it is off by default). Health Connect retains data indefinitely unless auto-delete is on, which
+is what makes a missed week recoverable — the next snapshot still contains it. With auto-delete
+on, history is silently truncated and no amount of correctness here gets it back. Note the widely
+repeated "Health Connect only keeps 30 days" claim is about a *connected app's read window*
+through the permissions system, not about storage, and does not apply to the scheduled export.
+
+## Failure modes, and what shouts
+
+The pipeline's real risk is not corruption, it is silence. A stopped export looks exactly like a
+quiet week. `daily_pull.sh` distinguishes three states deliberately:
+
+| State | Behaviour | Why |
+|---|---|---|
+| Phone setup never done (no `data/health/raw/*.zip` yet) | **Silent.** Ingest fails, job still exits 0 | Absence is the expected state before step 1–2 happen. Crying wolf nightly over a known-pending task trains you to ignore it |
+| Export landed once, then ingest fails | **Loud notification**, non-zero exit | The pipeline was live and broke |
+| Ingest succeeds but the newest zip is >48 h old | **Loud notification**, non-zero exit | OneDrive keeps serving yesterday's file quite happily. A successful ingest of a stale zip is precisely what a stopped phone export looks like, and it is the failure mode most likely to go unnoticed for a month |
+
+## Schema, and how it was established
+
+Table mapping derived 2026-08-12 from AOSP `packages/modules/HealthFitness`
+(`service/java/com/android/server/healthconnect/storage/datatypehelpers/*RecordHelper.java`),
+corroborated independently by two working third-party parsers that agree on every table name they
+touch. Graded per `PLAYBOOK.md` rule 16 — **A** where read in AOSP source, **B** where only
+third-party parsers confirm.
+
+| Record | Table | Grade |
+|---|---|---|
+| Sleep session | `sleep_session_record_table` | A |
+| Sleep stages (**discarded**) | `sleep_stages_table` | A |
+| Resting heart rate | `resting_heart_rate_record_table` | **B** — built from a constant, literal string not readable in source; the ingest tries both spellings and reports which it found |
+| Heart rate samples | `heart_rate_record_series_table` (`epoch_millis`, `beats_per_minute`) | A |
+| Weight | `weight_record_table` | A |
+| Steps | `steps_record_table` | A |
+| Exercise session | `exercise_session_record_table` (`exercise_type`; **squash = 43**) | A |
+| Body fat / water / lean / bone (**quarantined**) | `*_record_table` | A |
+
+Mechanics worth knowing:
+
+- **Every record carries a `uuid` BLOB** — that is the upsert key, hex-encoded on the way out.
+- **Times are epoch milliseconds with a *separate* zone-offset column in seconds**, never a
+  combined local timestamp. The ingest recombines them so nothing downstream has to know.
+- **Origin app** comes from `app_info_id` joined to `application_info_table`, which is how a
+  Samsung Health row is told apart from anything else writing to Health Connect.
+- **There is no foreign key from an exercise session to heart rate.** Correlating a squash game
+  to its HR is a time-range join done in application code — the ingest does it and stores mean,
+  max and sample count per session. That is the measurement that upgrades `cardio.md` §9's
+  squash energy figures from C-grade MET lookups to something derived from this player.
+- The schema has an `onUpgrade` path and has changed across module releases, so the ingest
+  **resolves tables by introspection at run time** rather than hardcoding, and fails loudly on a
+  database that is not a Health Connect export rather than silently writing zero rows.
+
+Unresolved, flagged rather than guessed: the current `DB_VERSION` integer and a changelog of prior
+schema diffs could not be pinned. Introspect-first is the defensive posture that makes that
+survivable.
+
+## Test
+
+`python3 tools/test_health_connect.py` builds a synthetic export to the schema above and asserts
+the mapping, the zone-offset round trip, hex uuids, the HR time-window join, upsert idempotence,
+the staleness gate, and that a foreign database fails loudly. It exists because the first night of
+real data should not also be the first test of the code reading it.
+
+**It proves the code does what it intends against the schema it believes in — not that the schema
+is right.** Only step 3 above can do that.
 
 ## What to take, and what to refuse
 
