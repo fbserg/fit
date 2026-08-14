@@ -7,6 +7,12 @@ Personal fitness project. First-principles reasoning only: mechanisms over bro-s
 - **No `Claude-Session:` links in commit messages** — they leak chat-transcript URLs into public history (PUBLISHING.md ruling). `Co-Authored-By` is fine.
 - `data/` and `private/` are gitignored on purpose; never force-add them.
 
+## Visual explanations (rule, 2026-08-13 — DECISIONS.md)
+- **When form is the point, show the movement.** Technique explanations, exercise swaps, ROM/setup rulings, injury-relevant positions get start/end images. Nutrition, scheduling, volume arithmetic, evidence critiques do **not** — a photo there is filler.
+- **Source: `yuhonas/free-exercise-db`** (873 exercises, Unlicense, photos self-hosted in-repo so no CDN can die). Index `dist/exercises.json`; photos `exercises/<Name_With_Underscores>/0.jpg` (start) and `1.jpg` (end), ~70 KB each. Verified 2026-08-13.
+- **Not in the DB → draw an SVG diagram.** The DB has no prone Y/T raise and no single-leg standing calf raise; wger's 3,313 entries have neither either. A drawing is sometimes *better* — it can show the one thing that matters (heel dropping below step level) where a photo can't.
+- **Artifact pages only. The repo stays text.** Images are embedded as data URIs in generated pages (artifact CSP blocks every external host; 16 MB page cap). Nothing binary gets committed and no markdown file links a third-party raw URL.
+
 ## Profile
 - Male, mid-30s, 5'10" (178 cm), 154 lb, relatively fit, returning to consistent training after a gap.
 - No known kidney/metabolic issues (assumed — revisit if that changes).

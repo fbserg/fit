@@ -102,6 +102,30 @@ exercise data into the same account the weekly review reads from. The history's 
 sanity check on starting loads, and `history.md` delivers that without polluting the signal.
 **Reopens if.** A cross-era progression chart is wanted badly enough to accept the noise.
 
+### Exercise visuals: free-exercise-db photos in generated pages, never in the repo
+**Ruling.** Movement explanations carry start/end images as a standing rule — but only where form is
+the actual subject (technique, setup, ROM, exercise swaps, injury-relevant positions), and only
+inside generated artifact pages. Nutrition, scheduling, volume arithmetic and evidence critiques get
+no images. Source is `yuhonas/free-exercise-db`: index at `dist/exercises.json`, photos at
+`exercises/<Name_With_Underscores>/0.jpg` (start) and `1.jpg` (end), ~70 KB each, Unlicense
+(SPDX-confirmed via the GitHub API 2026-08-13 — true public domain, no attribution obligation).
+**Why this source.** 873 exercises, and the photos live in the repo itself rather than on a CDN that
+can disappear — the failure mode that kills every other free exercise-image set. wger's 3,313-entry
+database was the alternative and is not better: it missed the same movements this one missed.
+**Where the DB runs out, draw.** No prone Y/T raise and no single-leg standing calf raise exists in
+either database. A hand-drawn SVG covers those, and for the calf raise it is the better artifact
+anyway: the thing that must be visible is the heel dropping below step level, which a photo pair
+taken at arbitrary depth does not reliably show.
+**Why pages and not the repo.** The repo has been deliberately text-only since the publishing pass —
+the single image it ever contained was dropped for PII (`PUBLISHING.md`). Vendoring photos would
+reverse that on purpose and add megabytes to a public repo; linking third-party raw URLs from
+markdown would make our documents break when someone else's repo is reorganized. Artifact pages have
+a strict CSP that blocks every external host regardless, so images there are embedded as data URIs
+and the page stays self-contained. Both constraints point the same way.
+**Reopens if.** The upstream repo goes away or relicenses (then vendor the ~30 photos this program
+actually uses, which the Unlicense permits outright), or the images start being wanted offline in
+the markdown itself.
+
 ---
 
 ## Program
