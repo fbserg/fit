@@ -12,7 +12,11 @@ set -u
 cd "$(dirname "$0")/.." || exit 1
 
 notify() {
-    /usr/bin/osascript -e "display notification \"$2\" with title \"$1\"" >/dev/null 2>&1
+    if [ -x /usr/bin/osascript ]; then
+        /usr/bin/osascript -e "display notification \"$2\" with title \"$1\"" >/dev/null 2>&1
+    else
+        echo "NOTIFY [$1] $2"
+    fi
 }
 
 exit_status=0
