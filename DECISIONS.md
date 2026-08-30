@@ -393,6 +393,19 @@ optimality — `exercises.md`, "What optimal means"), or a knee/road-safety issu
 unattractive. Note the two are not exclusive; this ruling only settles which one gets the slot
 when only one will realistically happen.
 
+### A standing desk is furniture, not a health intervention
+**Ruling.** Do not buy a sit-stand desk on health grounds. If one is bought, it is priced as
+comfort. The cheap substitute is a 25–30 min timer with 1 min of chair stands or a 2-min walk.
+**Why.** `standing-desk.md` (97-agent sweep, 2026-08-30). Energy delta is 6–13 kcal/day at
+achieved doses, under 10% of a ±150 step, so axis 1 retires it like stair descent. The sedentary
+mortality association is abolished above 30–40 min/day MVPA, which four lifts plus squash clears.
+Prolonged standing is null on postprandial insulin and glucose in every trial that isolated it;
+transitions and short walks are what work, and every positive trial enrolled older, overweight or
+inactive subjects. Standing >2 h/day carries its own orthostatic and venous cost. Cochrane rates
+the evidence low to very low, and a lead author of the standing guidelines sells the desks.
+**Reopens if.** A trial shows desks raise sit-to-stand transition count, lifting adherence
+collapses below the MVPA threshold, or back pain appears.
+
 ---
 
 ## Open, not yet decided
