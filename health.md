@@ -126,14 +126,14 @@ is right.** Only step 3 above can do that.
 | **Resting heart rate** | Yes | Genuine recovery/overreaching trend, and wrist RHR is one of the things these devices measure *well*. |
 | **Weight** | Yes, if present | Would close the nutrition calibration loop. Only appears if entered manually or via a Samsung scale. |
 | **Steps** | Trend only | NEAT proxy for the TDEE problem. Never the device's kcal figure — that is a derived number with an unaudited chain. |
-| **Exercise sessions (squash)** | Yes | `CLAUDE.md` flags squash as known-regular with no analysis. HR data would finally let `cardio.md` price it. |
+| **Exercise sessions (squash)** | Yes | `AGENTS.md` flags squash as known-regular with no analysis. HR data would finally let `cardio.md` price it. |
 | Sleep **stages** | No | Duration is decent; REM/deep staging is not. Take the total, discard the breakdown. |
 | **Body fat / body water / lean mass** | **Never** | This is the Galaxy Watch's wrist BIA. Quarantined in the ingest by constant, not by convention — see below. |
 
 ### The BIA trap
 
 The Galaxy Watch (4 and later) does wrist BIA, Samsung Health writes it, and Health Connect carries
-it — so it *will* arrive in every export whether or not anyone wants it. `CLAUDE.md` already rules
+it — so it *will* arrive in every export whether or not anyone wants it. `AGENTS.md` already rules
 that BIA absolutes are untrustworthy and that measurement methods are never compared across
 devices. A wrist BIA is strictly worse than the InBody, and letting the two into the same trend
 would corrupt the only body-composition series this project has.

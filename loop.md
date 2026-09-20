@@ -80,7 +80,7 @@ disappears.
 
 ## 3. What the weekly review actually checks
 
-Each check's rule is copied from `program.md`/`CLAUDE.md` verbatim in spirit — nothing
+Each check's rule is copied from `program.md`/`AGENTS.md` verbatim in spirit — nothing
 here is invented.
 
 | # | Check | Input needed | Rule (source) | Action triggered |
@@ -90,7 +90,7 @@ here is invented.
 | 3 | **Volume adherence** | Completed sets per exercise this week, mapped to primary-target muscle only (per `liftosaur.md`'s explicit ruling: ignore the app's synergist-inclusive numbers) | Weekly table: quads 9, hams 9, chest 9, back 9, calves 9, side delts 8, rear delts 5, triceps 5, biceps 5 (`program.md`) | Report actual vs target per muscle. Systematic shortfall (2+ consecutive weeks under target on the same muscle) → flag for review, not auto-correct. |
 | 4 | **Completion rate / session count** | Sessions logged vs 4 scheduled that week; sets completed vs sets prescribed per session | "adherence — the third growth variable... completion rate × weeks sustained" (`program.md`; `exercises.md` ranks it growth variable #2) | Report the number. This is the metric the program's own break-even argument for the free-choice/monotony-measure design assumes exists — it must be measured, not asserted. |
 | 5 | **Session duration** | Wall-clock time per logged session (Liftosaur timestamps first-set to last-set) | Target 32–38 min per day, ceiling ~45 min (`program.md`, Estimated length + Time ceiling) | If duration is consistently over ~45 min, flag — check whether the built-in time-ceiling rule (drop last isolation slot) is actually being applied, before proposing anything structural. |
-| 6 | **Weight-trend calorie rule** | Daily weigh-ins (external to Liftosaur — separate input), weekly average | ">0.5 lb/wk gain → −150 kcal, flat → +150" (`CLAUDE.md`, Nutrition rulings) | Compute the weekly average trend, apply the rule, report the suggested calorie delta. This is a nutrition-side check riding along in the same report, not a Liftosaur-derived one. |
+| 6 | **Weight-trend calorie rule** | Daily weigh-ins (external to Liftosaur — separate input), weekly average | ">0.5 lb/wk gain → −150 kcal, flat → +150" (`AGENTS.md`, Nutrition rulings) | Compute the weekly average trend, apply the rule, report the suggested calorie delta. This is a nutrition-side check riding along in the same report, not a Liftosaur-derived one. |
 
 ## 4. What may and may not be changed automatically
 
@@ -111,13 +111,13 @@ must encode this asymmetry structurally, not rely on remembering it in the momen
 | **Exercise substitution specifically** | Recommending a swap is rare, evidence-triggered only (e.g. a documented pain/joint-comfort issue, not "variety"), and must say explicitly which of `program.md`'s pre-vetted subs it invokes — never a novel exercise, never a default weekly output | — |
 
 The loop is a **read-and-report tool with a proposed-diff step**, never a write-to-`program.md`
-tool. `program.md`/`liftosaur.md`/`exercises.md`/`CLAUDE.md` are edited by hand after the
+tool. `program.md`/`liftosaur.md`/`exercises.md`/`AGENTS.md` are edited by hand after the
 user reads the report — consistent with `PLAYBOOK.md` rule 13 (log corrections in place,
 labeled, never silently).
 
 ## 5. Mechanism
 
-Smallest thing that works for a single-user local-first repo (`CLAUDE.md`: no hypothetical
+Smallest thing that works for a single-user local-first repo (`AGENTS.md`: no hypothetical
 abstractions). No new service, no database, no framework.
 
 ```
@@ -183,7 +183,7 @@ Stated honestly, because the loop is worthless if it manufactures signal that is
 - **Public-profile route is undocumented-as-an-API.** If Liftosaur changes the markup,
   the parser breaks. It should error loudly into the report ("pull failed, no data this
   week") rather than silently reusing last week's cached pull and presenting stale numbers
-  as current — a fail-fast requirement per `CLAUDE.md`'s Code section.
+  as current — a fail-fast requirement per `AGENTS.md`'s Code section.
 - **Volume-adherence check (check 3) depends on Liftosaur's per-exercise data mapping to
   the right primary muscle correctly** — `liftosaur.md` already documents the app's own
   synergist-credit numbers disagree with `program.md`'s primary-target counting. The

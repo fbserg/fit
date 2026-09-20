@@ -6,7 +6,7 @@ interesting than the framework needed to get them, so the framework is the point
 activities are worked examples.
 
 Closes the gap `INTAKE.md` flags for "any other regular cardio/sport" — partially. **Squash is
-not covered here** and is known-regular (`CLAUDE.md`, Injuries). It is a court sport with
+not covered here** and is known-regular (`AGENTS.md`, Injuries). It is a court sport with
 cutting, deceleration, and repeated wrist load on an already-injured wrist. It needs its own
 pass and does not inherit these conclusions.
 
@@ -52,7 +52,7 @@ a calorie decision.** This disposes of most incidental-activity questions perman
 
 - Daily weigh-in noise is **±1–2 lb of water** — which is **3,500–7,000 kcal of apparent
   signal** on the scale.
-- The protocol in `CLAUDE.md` adjusts on a **weekly average** against a **±150 kcal** step.
+- The protocol in `AGENTS.md` adjusts on a **weekly average** against a **±150 kcal** step.
 
 So anything under roughly 150 kcal/day is invisible to the control loop. More importantly: if
 you do it habitually, **the weekly weight trend has already absorbed it.** Adding calories back
@@ -263,7 +263,7 @@ is a choice, not a property of the staircase.
 
 Descending fast on stairs with turns has a failure mode that accumulated loading does not: a
 missed step is not a failed rep, it is concrete. The reflexive response is a hand catch, and
-that is the **rehabbed right wrist** (`CLAUDE.md`, Injuries) — the same joint already carrying
+that is the **rehabbed right wrist** (`AGENTS.md`, Injuries) — the same joint already carrying
 recurring squash load on the same side. Low probability per descent, but this happens daily,
 and the downside is a quarter of pressing rather than a sore quad.
 
@@ -384,7 +384,7 @@ Corrected to "attenuated well below a hypertrophy-driving stimulus." See §4.
 ## 9. Squash — the court-sport pass, run 2026-08-12
 
 The last unanalyzed regular activity in the project. `INTAKE.md` has listed court sport as
-genuinely open since 2026-08-01 and `CLAUDE.md` warns explicitly that squash does **not** inherit
+genuinely open since 2026-08-01 and `AGENTS.md` warns explicitly that squash does **not** inherit
 the cycling verdict. It now has its own pass, on the same four axes in the same order.
 
 **Input, from the lifter (2026-08-12):** one Thursday session per week, **~60 min booked, ~40 min
@@ -463,7 +463,7 @@ before is a squash-*performance* preference, not injury prevention.
 | Risk | Severity | Read |
 |---|---|---|
 | **Eye** | **Catastrophic, cheap to eliminate** | A squash ball is ~40 mm and fits *inside* the adult orbital rim, so the bone that protects you from most projectiles does not protect you from this one. Racquet strikes add to it. Protective eyewear is the single highest-value object in the sport and most recreational players don't wear it. **This is the one actionable item on this page.** |
-| **Right wrist** | Moderate, already tracked | Recurring same-side load on the rehabbed wrist, already named in `CLAUDE.md`. Green at 42.5 lb DB pressing + regular squash as of 2026-08-10. The settled schedule helps by accident: only one pressing day is adjacent to Thursday, and the day *after* is Lower B — all-machine, the lightest wrist day in the program. |
+| **Right wrist** | Moderate, already tracked | Recurring same-side load on the rehabbed wrist, already named in `AGENTS.md`. Green at 42.5 lb DB pressing + regular squash as of 2026-08-10. The settled schedule helps by accident: only one pressing day is adjacent to Thursday, and the day *after* is Lower B — all-machine, the lightest wrist day in the program. |
 | **Achilles** | Low probability, high consequence | Racquet sports are over-represented in Achilles rupture among 30–50-year-old recreational males; the mechanism is explosive push-off out of a lunge. Interaction worth naming and **not** acting on: Wednesday's calf myo-reps run to true failure the day before Thursday. That is mechanism reasoning with nothing measured behind it — precisely the tier of claim that produced the retraction in Axis 3 above, so it is logged as a canary, not a rule. The free option already exists if it ever matters: calf raise is already Upper B's designated time-ceiling drop slot. |
 | **Ankle / knee** | Ordinary | Standard court-sport cutting risk. Strength training reduces acute sports injury rates substantially (Lauersen 2014, 25 RCTs, 26,610 subjects), so the lifting program is protective here, not additive. |
 
