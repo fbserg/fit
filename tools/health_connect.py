@@ -56,7 +56,7 @@ DEFAULT_EXPORT_DIR = (
 STALE_EXPORT_HOURS = 48
 
 # Health Connect carries these, Samsung Health writes them, and this project must NOT store them:
-# they are the Galaxy Watch's wrist BIA. CLAUDE.md rules that BIA absolutes are untrustworthy and
+# they are the Galaxy Watch's wrist BIA. AGENTS.md rules that BIA absolutes are untrustworthy and
 # that measurement methods are never compared across devices -- a wrist BIA is strictly worse than
 # the InBody and mixing them would corrupt the scan trend. Dropped at ingest, deliberately, rather
 # than filtered at analysis time where someone would eventually forget.

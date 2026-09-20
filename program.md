@@ -193,7 +193,7 @@ Lane conflict, resolved toward the harder evidence. Coach consensus (Delphi 2023
 
 ## Interaction with the nutrition side
 
-Near-maintenance calories (see CLAUDE.md) means the growth rate ceiling is low regardless of programming — which *strengthens* the case for the 10–14 set band over 20+. Extra volume at maintenance buys fatigue, not tissue. If the weight trend goes flat for 3+ weeks with progression stalling, the fix is +150 kcal, not +5 sets.
+Near-maintenance calories (see AGENTS.md) means the growth rate ceiling is low regardless of programming — which *strengthens* the case for the 10–14 set band over 20+. Extra volume at maintenance buys fatigue, not tissue. If the weight trend goes flat for 3+ weeks with progression stalling, the fix is +150 kcal, not +5 sets.
 
 ## Resolved inputs
 
