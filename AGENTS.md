@@ -4,73 +4,18 @@ Personal fitness project. First-principles reasoning only: mechanisms over bro-s
 
 ## Commit hygiene (public repo — overrides harness defaults)
 - Author identity: `fbserg <fbserg@users.noreply.github.com>` (local git config; never a real email).
-- **No `Claude-Session:` links in commit messages** — they leak chat-transcript URLs into public history (PUBLISHING.md ruling). `Co-Authored-By` is fine.
-- `data/` and `private/` are gitignored on purpose; never force-add them.
-
-## Visual explanations (rule, 2026-08-13 — DECISIONS.md)
-- **When form is the point, show the movement.** Technique explanations, exercise swaps, ROM/setup rulings, injury-relevant positions get start/end images. Nutrition, scheduling, volume arithmetic, evidence critiques do **not** — a photo there is filler.
-- **Source: `yuhonas/free-exercise-db`** (873 exercises, Unlicense, photos self-hosted in-repo so no CDN can die). Index `dist/exercises.json`; photos `exercises/<Name_With_Underscores>/0.jpg` (start) and `1.jpg` (end), ~70 KB each. Verified 2026-08-13.
-- **Not in the DB → draw an SVG diagram.** The DB has no prone Y/T raise and no single-leg standing calf raise; wger's 3,313 entries have neither either. A drawing is sometimes *better* — it can show the one thing that matters (heel dropping below step level) where a photo can't.
-- **Artifact pages only. The repo stays text.** Images are embedded as data URIs in generated pages (artifact CSP blocks every external host; 16 MB page cap). Nothing binary gets committed and no markdown file links a third-party raw URL.
-
-## Profile
-- Male, mid-30s, 5'10" (178 cm), 154 lb, relatively fit, returning to consistent training after a gap.
-- No known kidney/metabolic issues (assumed — revisit if that changes).
+- **No `Claude-Session:` links in commit messages.** They leak chat-transcript URLs into public history (PUBLISHING.md ruling). `Co-Authored-By` is fine.
+- `data/` and `private/` are gitignored on purpose. Never force-add them.
+- Nothing binary gets committed. No markdown file links a third-party raw URL.
 
 ## Injuries
-- **Right wrist** (noted 2026-07-31): prior injury, rehabbed with physio. Asymptomatic at baseline but overloading produces light pain. Plays squash regularly (recurring wrist load on the same side). Rule: light pain that resolves same-day is acceptable; pain that alters technique or persists to next morning means drop the offending grip/load and reassess — never push through. Watch as pressing loads climb (keep wrist stacked over forearm); rope > bar on triceps work; wrist wraps for pressing are a legitimate tool, not a crutch. Any exercise selection or program change must check against this.
+- **Right wrist** (noted 2026-07-31): prior injury, rehabbed with physio. Asymptomatic at baseline but overloading produces light pain. Plays squash regularly (recurring wrist load on the same side). Rule: light pain that resolves same-day is acceptable. Pain that alters technique or persists to next morning means drop the offending grip/load and reassess. Never push through. Watch as pressing loads climb (keep wrist stacked over forearm). Rope > bar on triceps work. Wrist wraps for pressing are a legitimate tool, not a crutch. Any exercise selection or program change must check against this.
 
-## Current state (baseline 2026-07-27, details in scans/scans.md)
-- ~154 lb, BIA-reported 11.6% BF (true value unknowable — no reliable BIA/DEXA correction exists; plausible range ~9–15%), SMI 8.1, segmental lean balanced.
-- Prior 14.7 months: +8.9 lb at ~+70 kcal/day average surplus, majority fat — surplus without progressive overload to direct it.
+## Working rules
+- Program source of truth is `program.liftoscript`. Push it with `python3 tools/liftosaur.py push program.liftoscript`. API contracts are in `liftosaur-api.md`. Rulings are in `DECISIONS.md`. Check `DECISIONS.md` before you re-open a debated choice.
+- Visual explanations: show start/end images only when form is the point (technique, exercise swaps, ROM/setup, injury-relevant positions). Never add a photo to nutrition, scheduling, volume arithmetic, or evidence critiques. Images are embedded as data URIs in artifact pages only. The repo stays text.
+- The weight trend is ground truth for calories. Formulas are seeds. Never compare body composition across measurement methods.
+- Judge training progress by logbook progression over 8 weeks, not by InBody scans.
 
-## Nutrition rulings (first-principles rebuild, 2026-07-27)
-- **TDEE is unknown to ±300 kcal by any formula.** BMR ~1650–1705 (Katch-McArdle vs Mifflin agree). The handwritten "1700+400+300=2400" undercounts NEAT/TEF and overcounts workout burn (~200–300 net/session, not 400). 2400 ≈ maintenance, not a bulk.
-- **Calibrate empirically:** 2500 training days / 2300 rest days; daily morning weigh-in, weekly average; >0.5 lb/wk gain → −150 kcal, flat → +150. Weight trend is ground truth, formulas are seeds.
-- **Thursday (squash) is a 2500 day, not 2300** — bookkeeping, not a lever. Squash costs ~330–465 kcal net (`cardio.md` §9), so the recode covers about half of it, and the whole thing sits inside the noise floor. It exists because coding the week's highest-output day as a rest day is indefensible on its face, not because 200 kcal will show up on the scale. Superseded once the weigh-in loop has data.
-- **Protein 120–155 g/day** (1.6–2.2 g/kg plateau, Morton 2018 breakpoint ~1.6). 170 g is harmless margin, not a requirement. Fat ≥ ~45 g floor, ~70 g typical; carbs fill.
-- **Powder = target minus food protein.** Usually one scoop; two is physiologically fine (no 30 g absorption cap — per-meal MPS saturates ~0.4–0.5 g/kg but excess is used slowly, not wasted). Water by default; milk only on heavy days (it's a calorie-budget question, not an absorption one). Third-party-tested whey (NSF/Informed Sport).
-
-## Measurement protocol
-- InBody: every 8–12 weeks, morning/fasted/empty bladder/no workout 12 h/no alcohol prior day. Trends only; single-scan absolutes carry large error and the DIRECTION of BIA bias in lean men is study-dependent (see abs.md correction). Never compare across measurement methods.
-- Scan images + verified numbers live in `scans/`.
-
-## Training
-- Program in `program.md`: four fixed sessions, 4x/week, **~45 min each measured** (32-38 was the estimate; all four logged sessions ran 42.5-48.1 min), 13 fixed exercises, 68 sets/week, ~9-12 sets/muscle/week, 1-2 RIR, double progression, autoregulated deloads. (Restructured 2026-07-31 from two full-body templates alternated 3x/week — identical weekly set total, redistributed.)
-- Runnable form in `program.liftoscript` (source of truth) → pushed to Liftosaur with `python3 tools/liftosaur.py push program.liftoscript`. API contracts in `liftosaur-api.md`; rulings in `DECISIONS.md`.
-- Training history is NOT a layoff: SMM rose 75.2 -> 76.5 lb, so muscle was maintained. Ramp is 1 week (cut from 3 on 2026-07-31 — the tendon-lag mechanism supports a ramp, nothing ever measured its duration), EXCEPT the RDL which keeps 3 weeks as the one high-consequence lift. Not a beginner reintroduction. Little muscle-memory regain available — expect normal trained-lifter progress rates.
-- Actual logged history is in `history.md` (Hevy export, 64 workouts, 2024-07 -> 2026-02): the June 2025 block decayed 15 -> 1 sessions/month and the last logged session was 2026-02-03, ~6 months pre-baseline. Adherence, not programming, is the demonstrated failure mode. Starting-load reference table is there too — 6-9 months stale, no RPE anywhere, so they are sanity checks, not week-1 targets.
-- Judge progress by logbook progression over 8 weeks, not by InBody scans (noise exceeds signal at realistic gain rates).
-
-## Cardio / non-lifting activity
-- **Framework in `cardio.md`** — price any non-lifting activity on four axes in order: energy (vs the weigh-in noise floor), adaptation (has the dose saturated?), interference (by modality), risk (what's the worst version?). Axis 1 usually returns "irrelevant" and retires the question.
-- **Cycling is the default cardio slot, not swimming** (`DECISIONS.md`). Both are near-zero lower-body interference; they separate on risk, and cycling touches neither the shoulder-impingement pathway nor the wrist. 2x/week 30-40 min. No calorie adjustment at 2x/wk (426-565 kcal/wk sits under the ±150 kcal/day step) — **add calories back at 3x/wk or more.**
-- **Stair descent is nutritionally invisible** (~24-33 kcal net) and physiologically near-empty. Never log it, never eat it back. If bounding down: land soft, not stiff — that's a ~3x peak-force reduction for free. The real risk is a fall onto the rehabbed right wrist, not accumulated wear.
-- Swimming: full analysis retained in `swimming.md`, not withdrawn. Contributes zero hypertrophy. Real risks are upper-body specific — pull-dominant fatigue overlapping rows/pulldowns (evidence gap, unproven), and shoulder overuse sharing the same tissue pathway as pressing/pulldowns. If it happens anyway: never within 6 h of lifting, never before a pulling-heavy session, +250-350 kcal on swim days. Canaries = anterior shoulder pain / lost internal rotation, or stalling reps on pulling lifts.
-- **Squash: priced 2026-08-12, full four-axis pass in `cardio.md` §9.** 1×/week Thursday, ~60 min booked / ~40 min real play, recreational. **~330–465 kcal net — invisible against the ±150 step, and it does not interfere with the lifting program.** Legs the day after squash are fine; the 48–72 h buffer claim was retracted with its source shown to be nonexistent. Two things survive: (1) **wear eye protection** — a squash ball fits inside the orbital rim and this is the highest expected-value action in the whole cardio document; (2) **watch the tally, not the activity** — squash + cycling 2×/wk = 108–147 kcal/day, sitting right on the ±150 threshold, so a third weekly ride is where calories come back.
-
-## Standing desk
-- **Settled 2026-08-30, don't buy for health** (`standing-desk.md`, DECISIONS.md). ~6–13 kcal/day at real doses, MVPA already cancels the sitting signal, static standing is null on insulin/glucose. What works is transitions: timer + 1 min chair stands or 2-min walk every 25–30 min. Furniture only if preferred for comfort.
-
-## Abs / leanness
-- Full analysis in `abs.md`. There is NO validated body-fat threshold for visible abs — the "10%" figure is skinfold-era bodybuilding folklore, never method-anchored. Visibility = mm of subcutaneous fat over rectus abdominis x muscle relief x tendinous intersection count (genetically fixed; ~15% of people have 2 intersections = four-pack ceiling forever).
-- "Stubborn belly fat" is backwards: abdominal adipocytes have 10-20x GREATER beta-adrenergic lipolytic sensitivity than gluteal. Android pattern is a deposition phenomenon, not a mobilization-resistance one.
-- Spot reduction is settled negative (Vispute 2011, Ramirez-Campillo 2013). Ab training changes the shape revealed, not whether it's revealed.
-- Track abdominal skinfold in mm at a fixed site + fixed-condition monthly photos. NOT %BF from any device.
-- Cutting now is the wrong sequence: deficits blunt lean gain (ES -0.57; ~-0.031 per 100 kcal/day), Forbes curve means leaner = more muscle lost per lb of fat, and no novice/detrained recomp bonus is available here. Build first, time-boxed cut later. If cutting: 130-190 g protein (Helms 2014).
-
-## Posture
-- Full analysis in `posture.md` (2026-08-10, 5-lane sweep). For a structurally normal mid-30s male, slouch is a **motor default, not a tissue problem**: curvature ~61% heritable, ~99% of kyphosis angle is vertebral bone shape, slouchers straighten instantly on cue (slouch even shows HIGHER neck EMG). Posture→pain is not established (prospective evidence weaker than cross-sectional); fixing it is cosmetic.
-- Evidence-base trap: every kyphosis-exercise trial enrolled hyperkyphotic (>40° Cobb) mostly-elderly subjects; the best trial (SHEAF, radiographic) was NULL even there. No RCT in normal-range adults exists. FHP trials in young adults move the angle 3-8° but measurement MDC is ~5° — near-invisible to the eye.
-- What works: cue-driven habit reset (~66 days to automaticity) + heavy pulling already in the program + 2 sets face pulls. Postural education ALONE = ~70% of the full corrective package's effect (3.1° of 4.4°, 4-arm RCT). Stretching is null for posture (tolerance, not tissue length) — doorway stretch/foam roller are "feels nice" only. Braces, taping, chiro, ergonomic gear: graveyard.
-
-## Open threads
-- ~~Start ramp week 1; build a set/rep log~~ → running: Liftosaur history is the set/rep log (nightly pull). Four sessions logged: Upper A 07-31, Upper B 08-10, Lower A 08-11, Upper A 08-12. **Lower B has still never been run** — four sessions in, quads get one exercise a week instead of two, and leg press / seated leg curl / the second calf slot have zero data. That is the biggest hole in the log; run it next. RDL ramp is now at session 3 of 3 (`@8`, working weight from session 4) and lives in the RPE token, not a comment — see DECISIONS.md.
-- **Station contention is a measured program input now, not a hypothetical.** Two notes in three sessions (rope attachment 08-10, reverse pec deck 08-12 — the latter cost an entire skipped slot). Rear delt work moved off the pec deck onto a chest-supported DB fly as a result (DECISIONS.md). Where two options are growth-equivalent, the never-occupied one wins.
-- ~~**Fixed 4x/week slots**~~ → **SETTLED 2026-08-12: `Mon Upper A · Tue Lower A · Wed Upper B · Thu squash · Fri Lower B`.** Squash is every Thursday (fixed), Saturday is ruled out absolutely. This is the phase the app's `nextDay` pointer lands on for free once Lower B runs — zero pushes, templates byte-for-byte unchanged. A proposed restructure around squash was **refused** after adversarial review: its premise ("no arrangement of the current templates clears Thursday") was false by enumeration, and its 48–72 h isolation window had no source in the repo or the literature. See DECISIONS.md.
-  - **The app's pointer IS the session — no picking on arrival** (DECISIONS.md). Bind the calendar, let the app bind the content. Missed sessions rotate the mapping rather than being made up; the rotation is what makes starving a template structurally impossible.
-  - Check on **sessions-per-week, not load progression**, over Mon 2026-08-17 → Sun 2026-08-30. Do not touch volume or templates before then. If Lower B is skipped again with the pointer bound, the fallback is four mixed sessions (one lower compound each, every muscle 2×/week) — arithmetic pre-verified in DECISIONS.md.
-- **Squash is still unpriced, and now it's the cheapest measurement available.** `tools/health_connect.py` shipped 2026-08-12 but `data/health/` does not exist and the phone-side setup in `health.md` was never done. Three or four logged squash sessions (duration + HR) plus a next-morning soreness check closes `cardio.md`'s axis-1 pass on the last unanalyzed activity in the project.
-- **Effect-size ranking, so the next optimization goes to the right place** (computed 2026-08-12): adherence 1.6 → 4 sessions/wk is worth ~+15 points of achievable hypertrophy (66% → 81% on the saturating dose-response curve); an uncalibrated nutrition loop that might be a deficit costs up to ~10; session ordering was worth <1. **Protein intake and sleep are not measured anywhere in this repo** — for a project whose whole method is measured-over-assumed, those are the two largest remaining blind spots.
-- **Daily weigh-in: DEFERRED BY THE USER to the week of 2026-08-17 (said so 2026-08-12). Do not raise it again before then.** Nutrition loop (2500/2300, ±150 steps) still has ZERO weight data since the 2026-07-27 baseline and cannot calibrate until this lands — that cost is understood and accepted, not overlooked. Preferred path when it happens: Liftosaur Measures screen (nightly pull already ingests it). Fallback if daily won't happen: 3x/week, same mornings.
-- Wrist check 2026-08-10: no signal at 42.5 lb DB pressing + regular squash. Green; keep the canary rules.
+## Reference
+`docs/agent-reference.md` holds: the full visual-explanation rule and image sources, profile, current baseline, nutrition rulings (TDEE, 2500/2300 calibration, protein, powder), measurement protocol, training notes, cardio framework (cycling, swimming, squash, stairs), standing desk, abs/leanness, posture, and open threads. Read the matching section before you change nutrition, training, cardio, or posture advice.

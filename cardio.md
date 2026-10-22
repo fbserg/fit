@@ -52,7 +52,7 @@ a calorie decision.** This disposes of most incidental-activity questions perman
 
 - Daily weigh-in noise is **±1–2 lb of water** — which is **3,500–7,000 kcal of apparent
   signal** on the scale.
-- The protocol in `AGENTS.md` adjusts on a **weekly average** against a **±150 kcal** step.
+- The protocol in `docs/agent-reference.md` adjusts on a **weekly average** against a **±150 kcal** step.
 
 So anything under roughly 150 kcal/day is invisible to the control loop. More importantly: if
 you do it habitually, **the weekly weight trend has already absorbed it.** Adding calories back
@@ -384,7 +384,7 @@ Corrected to "attenuated well below a hypertrophy-driving stimulus." See §4.
 ## 9. Squash — the court-sport pass, run 2026-08-12
 
 The last unanalyzed regular activity in the project. `INTAKE.md` has listed court sport as
-genuinely open since 2026-08-01 and `AGENTS.md` warns explicitly that squash does **not** inherit
+genuinely open since 2026-08-01 and `docs/agent-reference.md` warns explicitly that squash does **not** inherit
 the cycling verdict. It now has its own pass, on the same four axes in the same order.
 
 **Input, from the lifter (2026-08-12):** one Thursday session per week, **~60 min booked, ~40 min

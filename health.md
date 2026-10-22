@@ -133,7 +133,7 @@ is right.** Only step 3 above can do that.
 ### The BIA trap
 
 The Galaxy Watch (4 and later) does wrist BIA, Samsung Health writes it, and Health Connect carries
-it — so it *will* arrive in every export whether or not anyone wants it. `AGENTS.md` already rules
+it — so it *will* arrive in every export whether or not anyone wants it. `docs/agent-reference.md` already rules
 that BIA absolutes are untrustworthy and that measurement methods are never compared across
 devices. A wrist BIA is strictly worse than the InBody, and letting the two into the same trend
 would corrupt the only body-composition series this project has.
